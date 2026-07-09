@@ -15,7 +15,7 @@ Go is my main thing - currently looking for a junior backend position. I also me
 ## What I'm doing right now
 
 - Planning a task queue project to dig into gRPC and worker pools
-- Reading through Go scheduler and GC internals - not because I have to, it's just interesting
+- Reading through Golang internals and source code - not because I have to, it's just interesting
 - Open to work, ready to learn from people who know more than me
 
 ---
