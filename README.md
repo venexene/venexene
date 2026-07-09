@@ -1,6 +1,6 @@
 # Alecksey
 
-I write Go. Currently looking for a junior backend position.
+Go is my main thing - currently looking for a junior backend position. I also mess with ML and game dev on the side.
 
 ---
 
@@ -22,6 +22,6 @@ I write Go. Currently looking for a junior backend position.
 
 ## Reach me
 
-telegram: [@Flayven](https://t.me/Flayven)
-email: [flayven.marlon@gmail.com](mailto:flayven.marlon@gmail.com)
+- telegram: [@Flayven](https://t.me/Flayven)
+- email: [flayven.marlon@gmail.com](mailto:flayven.marlon@gmail.com)
 
