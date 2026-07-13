@@ -24,6 +24,6 @@ Go is my main thing, Python on the side - currently looking for a junior backend
 
 ## Reach me
 
-- telegram: [@Flayven](https://t.me/Flayven)
-- email: [flayven.marlon@gmail.com](mailto:flayven.marlon@gmail.com)
+- Telegram: [@Flayven](https://t.me/Flayven)
+- Email: [flayven.marlon@gmail.com](mailto:flayven.marlon@gmail.com)
 
