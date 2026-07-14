@@ -20,7 +20,7 @@ Go is my main thing, Python on the side - currently looking for a junior backend
 
 **About:** Go deep-dive knowledge base.
 
-**Stack:** `MkDocs` · `Material` · `GitHub Pages`
+**Stack:** `MkDocs Material` · `GitHub Pages`
 
 **Live:** [venexene.github.io/goracle](https://venexene.github.io/goracle)
 
