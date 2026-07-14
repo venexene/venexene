@@ -6,7 +6,9 @@ Go is my main thing, Python on the side - currently looking for a junior backend
 
 ## What I've done
 
-**[gorder](https://github.com/venexene/gorder)** - event-driven order processing service.
+### [gorder](https://github.com/venexene/gorder)
+
+**About:** Event-driven order processing service.
 
 **Stack:** `Go` · `Gin` · `PostgreSQL` · `Kafka` · `Docker` · `Prometheus`
 
@@ -14,7 +16,9 @@ Go is my main thing, Python on the side - currently looking for a junior backend
 
 · · ·
 
-**[goracle](https://github.com/venexene/goracle-materials)** — Go deep-dive materials. [[live]](https://venexene.github.io/goracle)
+### [goracle](https://github.com/venexene/goracle-materials) [[live]](https://venexene.github.io/goracle)
+
+**About:** Go deep-dive knowledge base.
 
 **Stack:** `MkDocs` · `Material` · `GitHub Pages`
 
@@ -22,7 +26,9 @@ Go is my main thing, Python on the side - currently looking for a junior backend
 
 · · ·
 
-**[temgo](https://github.com/venexene/temgo)** — a terminal Pomodoro timer I use daily.
+### [temgo](https://github.com/venexene/temgo)
+
+**About:** A terminal Pomodoro timer I use daily.
 
 **Stack:** `Go` · `Bubble Tea` · `Lipgloss` · `Beep`
 
