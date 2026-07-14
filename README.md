@@ -16,11 +16,13 @@ Go is my main thing, Python on the side - currently looking for a junior backend
 
 · · ·
 
-### [goracle](https://github.com/venexene/goracle-materials) [[live]](https://venexene.github.io/goracle)
+### [goracle](https://github.com/venexene/goracle)
 
 **About:** Go deep-dive knowledge base.
 
 **Stack:** `MkDocs` · `Material` · `GitHub Pages`
+
+**Live:** [venexene.github.io/goracle](https://venexene.github.io/goracle)
 
 **Description:** Scheduler, escape analysis, garbage collector, memory model, concurrency and networking. Notes, diagrams, and code examples from my own learning.
 
