@@ -6,7 +6,7 @@ Go is my main thing, Python on the side - currently looking for a junior backend
 
 ## What I've done
 
-**[gorder](https://github.com/venexene/gorder)** - event-driven order processing service. Reads orders from Kafka, validates and stores them in Postgres. REST API with JWT auth. Docker Compose spins up the whole stack: Kafka, Postgres, Prometheus, Grafana.
+**[gorder](https://github.com/venexene/gorder)** — event-driven order processing service. Reads orders from Kafka, validates and stores them in Postgres. In-memory LRU cache. REST API with JWT auth, RBAC, rate limiting, and Swagger docs. Docker Compose spins up the whole stack: Kafka, Postgres, Prometheus, Grafana.
 
 **[goracle](https://venexene.github.io/goracle)** - Go deep-dive materials: scheduler, escape analysis, garbage collector, memory model, concurrency and networking. Notes, diagrams, and code examples from my own learning.
 
