@@ -7,10 +7,10 @@ Go is my main thing, Python on the side - currently looking for a junior backend
 ## Stats
 
 <a href="https://leetcode.com/venexene">
-  <img height="200" src="https://leetcard.jacoblin.cool/venexene?theme=dark&font=Roboto&ext=activity" />
+  <img height="280" src="https://leetcard.jacoblin.cool/venexene?theme=dark&font=Roboto&ext=activity" />
 </a>
 <a href="https://github.com/venexene">
-  <img height="200" src="https://github-readme-stats.vercel.app/api?username=venexene&show_icons=true&theme=dark&hide_border=true&count_private=true" />
+  <img height="280" src="https://github-readme-stats.vercel.app/api?username=venexene&show_icons=true&theme=dark" />
 </a>
 
 ---
