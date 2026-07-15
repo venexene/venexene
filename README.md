@@ -6,31 +6,27 @@ Go is my main thing, Python on the side - currently looking for a junior backend
 
 ## What I've done
 
-> ### [gorder](https://github.com/venexene/gorder) - order processing service
-> 
-> ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white) ![Gin](https://img.shields.io/badge/Gin-00ADD8?style=flat&logo=go&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white) ![Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat&logo=apachekafka&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white) ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat&logo=prometheus&logoColor=white)
-> 
-> Reads orders from Kafka, validates and stores them in Postgres. In-memory LRU cache, REST API with JWT auth, RBAC, rate limiting, and Swagger docs.
+### [gorder](https://github.com/venexene/gorder) - order processing service
 
-> ### [goracle](https://github.com/venexene/goracle) - Go knowledge base
-> 
-> ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white) ![MkDocs](https://img.shields.io/badge/MkDocs-526CFE?style=flat&logo=materialformkdocs&logoColor=white) ![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-222222?style=flat&logo=githubpages&logoColor=white)
-> 
-> [venexene.github.io/goracle](https://venexene.github.io/goracle) - scheduler, escape analysis, garbage collector, memory model, concurrency and networking. Notes, diagrams, and code examples.
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white) ![Gin](https://img.shields.io/badge/Gin-00ADD8?style=flat&logo=go&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white) ![Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat&logo=apachekafka&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white) ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat&logo=prometheus&logoColor=white)
 
-> ### [temgo](https://github.com/venexene/temgo) - terminal Pomodoro timer
-> 
-> ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white) ![Bubble Tea](https://img.shields.io/badge/Bubble_Tea-50BFA5?style=flat) ![Lipgloss](https://img.shields.io/badge/Lipgloss-F4A261?style=flat)
-> 
-> JSON-based plans, TUI, history in JSONL. Desktop notifications, CI, release v1.0.0.
+Reads orders from Kafka, validates and stores them in Postgres. In-memory LRU cache, REST API with JWT auth, RBAC, rate limiting, and Swagger docs.
 
----
+· · ·
 
-## What I'm doing right now
+### [goracle](https://github.com/venexene/goracle) - Go knowledge base
 
-- Building a reminder planner with FastAPI, PostgreSQL, Redis and WebSocket - getting comfortable with the Python backend stack
-- Planning a Go task queue with gRPC and worker pools - next on the list
-- Open to work, ready to learn from people who know more than me
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white) ![MkDocs](https://img.shields.io/badge/MkDocs-526CFE?style=flat&logo=materialformkdocs&logoColor=white) ![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-222222?style=flat&logo=githubpages&logoColor=white)
+
+[venexene.github.io/goracle](https://venexene.github.io/goracle) - scheduler, escape analysis, garbage collector, memory model, concurrency and networking. Notes, diagrams, and code examples.
+
+· · ·
+
+### [temgo](https://github.com/venexene/temgo) - terminal Pomodoro timer
+
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white) ![Bubble Tea](https://img.shields.io/badge/Bubble_Tea-50BFA5?style=flat&labelColor=555) ![Lipgloss](https://img.shields.io/badge/Lipgloss-F4A261?style=flat&labelColor=555)
+
+JSON-based plans, TUI, history in JSONL. Desktop notifications, CI, release v1.0.0.
 
 ---
 
