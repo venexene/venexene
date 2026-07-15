@@ -4,17 +4,6 @@ Go is my main thing, Python on the side - currently looking for a junior backend
 
 ---
 
-## Stats
-
-<a href="https://leetcode.com/venexene">
-  <img height="280" src="https://leetcard.jacoblin.cool/venexene?theme=dark&font=Roboto&ext=activity" />
-</a>
-<a href="https://github.com/venexene">
-  <img height="280" src="https://github-readme-stats.vercel.app/api?username=venexene&show_icons=true&theme=dark" />
-</a>
-
----
-
 ## What I've done
 
 ### [gorder](https://github.com/venexene/gorder)
@@ -54,6 +43,14 @@ Go is my main thing, Python on the side - currently looking for a junior backend
 - Building a reminder planner with FastAPI, PostgreSQL, Redis and WebSocket - getting comfortable with the Python backend stack
 - Planning a Go task queue with gRPC and worker pools - next on the list
 - Open to work, ready to learn from people who know more than me
+
+---
+
+## Stats
+
+[![LeetCode Stats](https://leetcard.jacoblin.cool/venexene?theme=dark&font=Roboto&ext=activity)](https://leetcode.com/venexene)
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=venexene&show_icons=true&theme=dark&hide_rank=true)
 
 ---
 
