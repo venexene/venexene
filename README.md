@@ -50,7 +50,7 @@ Go is my main thing, Python on the side - currently looking for a junior backend
 
 [![LeetCode Stats](https://leetcard.jacoblin.cool/venexene?theme=dark&font=Roboto&ext=activity)](https://leetcode.com/venexene)
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=venexene&show_icons=true&theme=dark&hide_rank=true)
+![GitHub Stats](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=venexene&theme=dark)
 
 ---
 
