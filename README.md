@@ -6,35 +6,23 @@ Go is my main thing, Python on the side - currently looking for a junior backend
 
 ## What I've done
 
-### [gorder](https://github.com/venexene/gorder)
+> ### [gorder](https://github.com/venexene/gorder) - order processing service
+> 
+> ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white) ![Gin](https://img.shields.io/badge/Gin-00ADD8?style=flat&logo=go&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white) ![Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat&logo=apachekafka&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white) ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat&logo=prometheus&logoColor=white)
+> 
+> Reads orders from Kafka, validates and stores them in Postgres. In-memory LRU cache, REST API with JWT auth, RBAC, rate limiting, and Swagger docs.
 
-**About:** Event-driven order processing service.
+> ### [goracle](https://github.com/venexene/goracle) - Go knowledge base
+> 
+> ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white) ![MkDocs](https://img.shields.io/badge/MkDocs-526CFE?style=flat&logo=materialformkdocs&logoColor=white) ![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-222222?style=flat&logo=githubpages&logoColor=white)
+> 
+> [venexene.github.io/goracle](https://venexene.github.io/goracle) - scheduler, escape analysis, garbage collector, memory model, concurrency and networking. Notes, diagrams, and code examples.
 
-**Stack:** `Go` · `Gin` · `PostgreSQL` · `Kafka` · `Docker` · `Prometheus`
-
-**Description:** Reads orders from Kafka, validates and stores them in Postgres. In-memory LRU cache. REST API with JWT auth, RBAC, rate limiting, and Swagger docs. Docker Compose spins up the whole stack.
-
-· · ·
-
-### [goracle](https://github.com/venexene/goracle)
-
-**About:** Go deep-dive knowledge base.
-
-**Stack:** `MkDocs Material` · `GitHub Pages`
-
-**Live:** [venexene.github.io/goracle](https://venexene.github.io/goracle)
-
-**Description:** Scheduler, escape analysis, garbage collector, memory model, concurrency and networking. Notes, diagrams, and code examples from my own learning.
-
-· · ·
-
-### [temgo](https://github.com/venexene/temgo)
-
-**About:** A terminal Pomodoro timer I use daily.
-
-**Stack:** `Go` · `Bubble Tea` · `Lipgloss` · `Beep`
-
-**Description:** JSON-based plans with custom plan loading, Bubble Tea TUI, keeps history in a JSONL file. Desktop notifications, CI, release v1.0.0.
+> ### [temgo](https://github.com/venexene/temgo) - terminal Pomodoro timer
+> 
+> ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white) ![Bubble Tea](https://img.shields.io/badge/Bubble_Tea-50BFA5?style=flat) ![Lipgloss](https://img.shields.io/badge/Lipgloss-F4A261?style=flat)
+> 
+> JSON-based plans, TUI, history in JSONL. Desktop notifications, CI, release v1.0.0.
 
 ---
 
