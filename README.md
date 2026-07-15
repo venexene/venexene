@@ -4,6 +4,17 @@ Go is my main thing, Python on the side - currently looking for a junior backend
 
 ---
 
+## Stats
+
+<a href="https://leetcode.com/venexene">
+  <img height="200" src="https://leetcard.jacoblin.cool/venexene?theme=dark&font=Roboto&ext=activity" />
+</a>
+<a href="https://github.com/venexene">
+  <img height="200" src="https://github-readme-stats.vercel.app/api?username=venexene&show_icons=true&theme=dark&hide_border=true&count_private=true" />
+</a>
+
+---
+
 ## What I've done
 
 ### [gorder](https://github.com/venexene/gorder)
@@ -34,7 +45,7 @@ Go is my main thing, Python on the side - currently looking for a junior backend
 
 **Stack:** `Go` · `Bubble Tea` · `Lipgloss` · `Beep`
 
-**Description:** JSON-based plans with custom plan loading, Bubble Tea TUI, keeps history in a JSONL file. Desktop notifications, CI, full documentation.
+**Description:** JSON-based plans with custom plan loading, Bubble Tea TUI, keeps history in a JSONL file. Desktop notifications, CI, release v1.0.0.
 
 ---
 
@@ -50,4 +61,5 @@ Go is my main thing, Python on the side - currently looking for a junior backend
 
 - Telegram: [@Flayven](https://t.me/Flayven)
 - Email: [flayven.marlon@gmail.com](mailto:flayven.marlon@gmail.com)
+- Resume: [CV (PDF)](https://github.com/venexene/venexene/blob/main/resume.pdf)
 
