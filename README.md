@@ -46,11 +46,21 @@ Go is my main thing, Python on the side - currently looking for a junior backend
 
 ---
 
-## Stats
+## LeetCode
 
-[![LeetCode Stats](https://leetcard.jacoblin.cool/venexene?theme=dark&font=Roboto&ext=activity)](https://leetcode.com/venexene)
+<p align="center">
+  <a href="https://leetcode.com/venexene">
+    <img src="https://leetcard.jacoblin.cool/venexene?theme=dark&font=Roboto&ext=activity" />
+  </a>
+</p>
 
-![GitHub Stats](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=venexene&theme=dark)
+---
+
+## GitHub
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=venexene&theme=dark" />
+</p>
 
 ---
 
