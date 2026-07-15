@@ -52,5 +52,5 @@ JSON-based plans, TUI, history in JSONL. Desktop notifications, CI, release v1.0
 
 - Telegram: [@Flayven](https://t.me/Flayven)
 - Email: [flayven.marlon@gmail.com](mailto:flayven.marlon@gmail.com)
-- Resume: [CV (PDF)](https://github.com/venexene/venexene/blob/main/resume.pdf)
+- Resume: [CV](https://github.com/venexene/venexene/blob/main/resume.pdf)
 
