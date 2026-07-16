@@ -40,14 +40,6 @@ JSON-based plans, TUI, history in JSONL. Desktop notifications, CI, release v1.0
 
 ---
 
-## GitHub
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=venexene&theme=dark" />
-</p>
-
----
-
 ## Reach me
 
 - Telegram: [@Flayven](https://t.me/Flayven)
