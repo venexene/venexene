@@ -1,6 +1,6 @@
 # Alecksey
 
-Go is my main thing, Python on the side - currently looking for a junior backend position. Also into ML and computer graphics.
+Go is my main thing, Python on the side - currently looking for a junior backend position. Also into machine learning and computer graphics.
 
 ---
 
