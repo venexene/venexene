@@ -28,6 +28,30 @@ Reads orders from Kafka, validates and stores them in Postgres. In-memory LRU ca
 
 JSON-based plans, TUI, history in JSONL. Desktop notifications, CI, release v1.0.0.
 
+· · ·
+
+### [Nango](https://github.com/venexene/nango) - URL shortener with analytics
+
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+
+Shortens URLs with base62 codes, click analytics by day, month and user-agent. Type-safe SQL via sqlc.
+
+· · ·
+
+### [Gonsai](https://github.com/venexene/gonsai) - comment tree with full-text search
+
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat&logo=sqlite&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+
+Nested comments, recursive CTE, FTS5 full-text search with highlighting. Pure `net/http`, no frameworks.
+
+· · ·
+
+### [Gong](https://github.com/venexene/gong) - delayed notification service
+
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white) ![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=flat&logo=rabbitmq&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+
+Delayed delivery via RabbitMQ TTL + Dead-Letter Exchange. Exponential backoff, up to 10 retries.
+
 ---
 
 ## LeetCode
