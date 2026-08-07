@@ -42,7 +42,7 @@ Shortens URLs with base62 codes, click analytics by day, month and user-agent. T
 
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat&logo=sqlite&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 
-Nested comments, recursive CTE, FTS5 full-text search with highlighting. Pure `net/http`, no frameworks.
+Nested comments, recursive CTE, FTS5 full-text search with highlighting. Pure net/http, no frameworks.
 
 · · ·
 
