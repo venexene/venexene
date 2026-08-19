@@ -33,3 +33,5 @@ jobs:
               g.setAttribute("width", "90");
               g.setAttribute("height", "90");
             });
+            const leetcodeTitle = document.querySelector("h2.field");
+            if (leetcodeTitle) leetcodeTitle.lastChild.textContent = "LeetCode";
