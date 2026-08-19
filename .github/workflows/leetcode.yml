@@ -19,7 +19,7 @@ jobs:
           token: NOT_NEEDED
           base: ""
           config_display: regular
-          config_padding: 0, 12
+          config_padding: 0, 28
           plugin_leetcode: yes
           plugin_leetcode_user: venexene
           plugin_leetcode_sections: solved, skills, recent
