@@ -19,7 +19,7 @@ jobs:
           token: NOT_NEEDED
           base: ""
           config_display: regular
-          config_padding: 0, 12 + 20%
+          config_padding: 0
           plugin_leetcode: yes
           plugin_leetcode_user: venexene
           plugin_leetcode_sections: solved, skills, recent
@@ -34,4 +34,4 @@ jobs:
               g.setAttribute("height", "90");
             });
             const leetcodeTitle = document.querySelector("h2.field");
-            if (leetcodeTitle) leetcodeTitle.lastChild.textContent = "LeetCode";
+            if (leetcodeTitle) leetcodeTitle.remove();

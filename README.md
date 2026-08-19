@@ -15,15 +15,17 @@ Go is my main thing, Python on the side - currently looking for a junior backend
 <table>
   <tr>
     <td>
-      <img src="https://github-readme-stats.vercel.app/api?username=venexene&show_icons=true&bg_color=000000&title_color=ffffff&text_color=ffffff&icon_color=ffffff&ring_color=ffffff&hide_border=true" alt="GitHub stats" />
+      <img src="https://github-readme-stats.shion.dev/api?username=venexene&show_icons=true&bg_color=000000&title_color=ffffff&text_color=ffffff&icon_color=ffffff&ring_color=ffffff&hide_border=true" alt="GitHub stats" />
     </td>
     <td>
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=venexene&layout=compact&bg_color=000000&title_color=ffffff&text_color=ffffff&hide_border=true" alt="Top Langs" />
+      <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=venexene&layout=compact&bg_color=000000&title_color=ffffff&text_color=ffffff&hide_border=true" alt="Top Langs" />
     </td>
   </tr>
 </table>
 
-![LeetCode Stats](./metrics.plugin.leetcode.svg)
+<div align="center">
+  <img src="./metrics.plugin.leetcode.svg" alt="LeetCode Stats" />
+</div>
 
 ---
 
