@@ -4,6 +4,23 @@ Go is my main thing, Python on the side - currently looking for a junior backend
 
 ---
 
+[![GitHub activity graph](https://github-readme-activity-graph.vercel.app/graph?username=venexene&theme=high-contrast)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
+<table>
+  <tr>
+    <td>
+      <img src="https://github-readme-stats.vercel.app/api?username=venexene&show_icons=true&bg_color=000000&title_color=ffffff&text_color=ffffff&icon_color=ffffff&ring_color=ffffff&hide_border=true" alt="GitHub stats" />
+    </td>
+    <td>
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=venexene&layout=compact&bg_color=000000&title_color=ffffff&text_color=ffffff&hide_border=true" alt="Top Langs" />
+    </td>
+  </tr>
+</table>
+
+![LeetCode Stats](./metrics.plugin.leetcode.svg)
+
+---
+
 ## What I've done
 
 ### [Gorder](https://github.com/venexene/gorder) - order processing service
@@ -51,16 +68,6 @@ Nested comments, recursive CTE, FTS5 full-text search with highlighting. Pure ne
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white) ![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=flat&logo=rabbitmq&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 
 Delayed delivery via RabbitMQ TTL + Dead-Letter Exchange. Exponential backoff, up to 10 retries.
-
----
-
-## LeetCode
-
-<p align="center">
-  <a href="https://leetcode.com/venexene">
-    <img src="https://leetcard.jacoblin.cool/venexene?theme=dark&font=Roboto&ext=activity" />
-  </a>
-</p>
 
 ---
 

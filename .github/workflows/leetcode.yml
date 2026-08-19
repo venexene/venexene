@@ -1,0 +1,35 @@
+name: Metrics
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+  push:
+    branches: ["main", "master"]
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.leetcode.svg
+          token: NOT_NEEDED
+          base: ""
+          config_display: regular
+          config_padding: 0, 12 + 20%
+          plugin_leetcode: yes
+          plugin_leetcode_user: venexene
+          plugin_leetcode_sections: solved, skills, recent
+          extras_css: |
+            .leetcode.scores .gauge {
+              width: 90px !important;
+              height: 90px !important;
+            }
+          extras_js: |
+            document.querySelectorAll(".leetcode.scores .gauge").forEach((g) => {
+              g.setAttribute("width", "90");
+              g.setAttribute("height", "90");
+            });
