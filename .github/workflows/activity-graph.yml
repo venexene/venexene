@@ -1,0 +1,35 @@
+name: Update activity graph
+
+on:
+  schedule:
+    - cron: "17 1 * * *"
+  workflow_dispatch:
+  push:
+    branches: ["main", "master"]
+    paths:
+      - ".github/workflows/activity-graph.yml"
+      - "scripts/generate-activity-graph.mjs"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Generate graph
+        env:
+          GITHUB_USERNAME: venexene
+          # A PAT is optional for public contributions, but lets the graph include
+          # private contributions when that setting is enabled on the profile.
+          GITHUB_TOKEN: ${{ secrets.ACTIVITY_GRAPH_TOKEN || github.token }}
+        run: node scripts/generate-activity-graph.mjs
+      - name: Commit updated graph
+        uses: stefanzweifel/git-auto-commit-action@v6
+        with:
+          commit_message: "chore: update activity graph"
+          file_pattern: activity-graph.svg

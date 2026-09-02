@@ -10,7 +10,7 @@ Go is my main thing, Python on the side - currently looking for a junior backend
 
 ---
 
-[![GitHub activity graph](https://github-readme-activity-graph.vercel.app/graph?username=venexene&theme=high-contrast)](https://github.com/ashutosh00710/github-readme-activity-graph)
+![GitHub activity graph](./activity-graph.svg)
 
 <table>
   <tr>
