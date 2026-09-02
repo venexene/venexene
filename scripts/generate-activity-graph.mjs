@@ -1,58 +1,38 @@
 import { writeFile } from "node:fs/promises";
 
 const login = process.env.GITHUB_USERNAME;
-const token = process.env.GITHUB_TOKEN;
 
-if (!login || !token) {
-  throw new Error("GITHUB_USERNAME and GITHUB_TOKEN must be set.");
+if (!login) {
+  throw new Error("GITHUB_USERNAME must be set.");
 }
 
 const dayMs = 24 * 60 * 60 * 1000;
 const now = new Date();
 const today = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
 const from = new Date(today.getTime() - 30 * dayMs);
-const to = now;
-
-const query = `
-  query ActivityGraph($login: String!, $from: DateTime!, $to: DateTime!) {
-    user(login: $login) {
-      contributionsCollection(from: $from, to: $to) {
-        contributionCalendar {
-          contributionDays: weeks {
-            contributionDays { date contributionCount }
-          }
-        }
-      }
-    }
-  }
-`;
-
-const response = await fetch("https://api.github.com/graphql", {
-  method: "POST",
+const response = await fetch(`https://github.com/users/${encodeURIComponent(login)}/contributions`, {
   headers: {
-    Authorization: `bearer ${token}`,
-    "Content-Type": "application/json",
+    Accept: "text/html",
     "User-Agent": "venexene-activity-graph",
   },
-  body: JSON.stringify({ query, variables: { login, from: from.toISOString(), to: to.toISOString() } }),
 });
 
-if (!response.ok) throw new Error(`GitHub GraphQL returned HTTP ${response.status}.`);
-const payload = await response.json();
-if (payload.errors?.length) throw new Error(payload.errors.map(({ message }) => message).join("; "));
+if (!response.ok) throw new Error(`GitHub contribution calendar returned HTTP ${response.status}.`);
+const calendarHtml = await response.text();
+const levelsByDate = new Map();
+for (const match of calendarHtml.matchAll(/data-date="(\d{4}-\d{2}-\d{2})"[^>]*data-level="(\d)"/g)) {
+  levelsByDate.set(match[1], Number(match[2]));
+}
+if (levelsByDate.size === 0) throw new Error("GitHub did not return a public contribution calendar.");
 
-const returnedDays = payload.data?.user?.contributionsCollection?.contributionCalendar?.contributionDays?.flat();
-if (!returnedDays) throw new Error("GitHub did not return a contribution calendar.");
-
-// The GraphQL range boundaries are time-based, so GitHub can omit a partial
-// first or last day. Keep the chart's 31 calendar-day timeline stable.
-const countsByDate = new Map(returnedDays.map(({ date, contributionCount }) => [date, contributionCount]));
+// GitHub exposes public contribution intensity (0–4) in the profile calendar.
+// It is stable for a static README and does not require a profile access token.
 const days = Array.from({ length: 31 }, (_, index) => {
   const date = new Date(from.getTime() + index * dayMs).toISOString().slice(0, 10);
-  return { date, contributionCount: countsByDate.get(date) ?? 0 };
+  return { date, activityLevel: levelsByDate.get(date) ?? 0 };
 });
 
-const counts = days.map((day) => day.contributionCount);
+const counts = days.map((day) => day.activityLevel);
 const maximum = Math.max(...counts, 1);
 const width = 900;
 const height = 250;
@@ -83,11 +63,11 @@ const labels = [0, 7, 14, 21, 30].map((index) => {
   const { x } = points[index];
   return `<text x="${x}" y="${height - 20}" text-anchor="middle">${dateLabel(index)}</text>`;
 }).join("");
-const circles = points.map(({ x, y }, index) => `<circle cx="${x}" cy="${y}" r="3"><title>${days[index].date}: ${counts[index]} contributions</title></circle>`).join("");
+const circles = points.map(({ x, y }, index) => `<circle cx="${x}" cy="${y}" r="3"><title>${days[index].date}: activity level ${counts[index]} of 4</title></circle>`).join("");
 
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="title desc">
   <title id="title">GitHub Activity Graph for ${login}</title>
-  <desc id="desc">Daily GitHub contributions during the last 31 days.</desc>
+  <desc id="desc">Daily public GitHub contribution activity during the last 31 days.</desc>
   <defs><linearGradient id="fill" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#00e5ff" stop-opacity=".35"/><stop offset="1" stop-color="#00e5ff" stop-opacity="0"/></linearGradient></defs>
   <rect width="100%" height="100%" rx="8" fill="#000" stroke="#fff"/>
   <text x="${left}" y="31" fill="#fff" font-family="Arial, sans-serif" font-size="18" font-weight="600">GitHub Activity Graph</text>

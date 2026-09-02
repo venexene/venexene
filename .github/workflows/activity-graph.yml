@@ -30,9 +30,6 @@ jobs:
       - name: Generate graph
         env:
           GITHUB_USERNAME: venexene
-          # A profile PAT is required; the repository-scoped github.token can
-          # return an empty contribution calendar for this user.
-          GITHUB_TOKEN: ${{ secrets.ACTIVITY_GRAPH_TOKEN }}
         run: node scripts/generate-activity-graph.mjs
       - name: Commit updated graph
         uses: stefanzweifel/git-auto-commit-action@v7
