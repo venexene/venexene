@@ -41,11 +41,16 @@ if (!response.ok) throw new Error(`GitHub GraphQL returned HTTP ${response.statu
 const payload = await response.json();
 if (payload.errors?.length) throw new Error(payload.errors.map(({ message }) => message).join("; "));
 
-const days = payload.data?.user?.contributionsCollection?.contributionCalendar?.contributionDays
-  ?.flat()
-  .filter((day) => day.date >= from.toISOString().slice(0, 10) && day.date <= today.toISOString().slice(0, 10));
+const returnedDays = payload.data?.user?.contributionsCollection?.contributionCalendar?.contributionDays?.flat();
+if (!returnedDays) throw new Error("GitHub did not return a contribution calendar.");
 
-if (!days || days.length !== 31) throw new Error("GitHub returned an incomplete contribution calendar.");
+// The GraphQL range boundaries are time-based, so GitHub can omit a partial
+// first or last day. Keep the chart's 31 calendar-day timeline stable.
+const countsByDate = new Map(returnedDays.map(({ date, contributionCount }) => [date, contributionCount]));
+const days = Array.from({ length: 31 }, (_, index) => {
+  const date = new Date(from.getTime() + index * dayMs).toISOString().slice(0, 10);
+  return { date, contributionCount: countsByDate.get(date) ?? 0 };
+});
 
 const counts = days.map((day) => day.contributionCount);
 const maximum = Math.max(...counts, 1);
