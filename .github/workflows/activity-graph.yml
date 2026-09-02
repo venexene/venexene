@@ -13,23 +13,29 @@ on:
 permissions:
   contents: write
 
+# A scheduled run and a manual/push run can otherwise try to commit the SVG at
+# the same time, causing a non-fast-forward push rejection.
+concurrency:
+  group: activity-graph-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: 22
       - name: Generate graph
         env:
           GITHUB_USERNAME: venexene
-          # A PAT is optional for public contributions, but lets the graph include
-          # private contributions when that setting is enabled on the profile.
-          GITHUB_TOKEN: ${{ secrets.ACTIVITY_GRAPH_TOKEN || github.token }}
+          # A profile PAT is required; the repository-scoped github.token can
+          # return an empty contribution calendar for this user.
+          GITHUB_TOKEN: ${{ secrets.ACTIVITY_GRAPH_TOKEN }}
         run: node scripts/generate-activity-graph.mjs
       - name: Commit updated graph
-        uses: stefanzweifel/git-auto-commit-action@v6
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "chore: update activity graph"
           file_pattern: activity-graph.svg
