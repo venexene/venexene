@@ -23,7 +23,7 @@
 
 <img width="100%" src="./activity-graph.svg" alt="GitHub activity graph" />
 
-<br /><br />
+<br />
 
 <table>
   <tr>
@@ -36,11 +36,11 @@
   </tr>
 </table>
 
-<br /><br />
+<br />
 
 <img width="100%" src="./metrics.plugin.leetcode.svg?v=wide-330" alt="LeetCode Stats" />
 
-<br /><br />
+<br />
 
 <table>
   <tr>
