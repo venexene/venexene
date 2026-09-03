@@ -23,11 +23,7 @@ Go is my main thing, Python on the side - currently looking for a junior backend
   </tr>
 </table>
 
-<div align="center">
-  <img src="./metrics.plugin.leetcode.svg" alt="LeetCode Stats" />
-</div>
-
----
+<img src="./metrics.plugin.leetcode.svg" alt="LeetCode Stats" />
 
 <table>
   <tr>

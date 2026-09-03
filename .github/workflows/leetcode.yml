@@ -19,11 +19,27 @@ jobs:
           token: NOT_NEEDED
           base: ""
           config_display: regular
-          config_padding: 0, 28
+          config_padding: 0, 0
           plugin_leetcode: yes
           plugin_leetcode_user: venexene
           plugin_leetcode_sections: solved, skills, recent
           extras_css: |
+            .items-wrapper {
+              box-sizing: border-box;
+              height: 100%;
+              padding: 14px 18px;
+              background: #000;
+              border: 1px solid #fff;
+              border-radius: 8px;
+              color: #d1d5db;
+            }
+            .items-wrapper svg { color: #00e5ff; }
+            .items-wrapper .label {
+              background-color: #00e5ff22;
+              color: #00e5ff;
+            }
+            .leetcode .gauge-arc, .leetcode .dot { color: #00e5ff !important; }
+            .leetcode .count, .leetcode .infos .date { color: #a6a6a6 !important; }
             .leetcode.scores .gauge {
               width: 90px !important;
               height: 90px !important;
