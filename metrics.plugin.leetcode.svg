@@ -13,15 +13,34 @@
  color: #d1d5db;
 }
 .items-wrapper svg { color: #00e5ff; }
+.items-wrapper &gt; section {
+ display: grid;
+ grid-template-columns: 3fr 2fr;
+ gap: 12px 28px;
+}
+.items-wrapper &gt; section &gt; section:first-child {
+ grid-column: 1 / -1;
+}
+.leetcode.scores .categories {
+ width: 620px;
+ margin: 0 auto;
+}
+.leetcode.subsection {
+ padding-left: 0;
+ margin: 0;
+}
+.leetcode.subsection h2 { font-size: 18px; color: #fff; }
 .items-wrapper .label {
  background-color: #00e5ff22;
  color: #00e5ff;
+ font-size: 13px;
+ line-height: 24px;
 }
 .leetcode .gauge-arc, .leetcode .dot { color: #00e5ff !important; }
 .leetcode .count, .leetcode .infos .date { color: #a6a6a6 !important; }
 .leetcode.scores .gauge {
- width: 90px !important;
- height: 90px !important;
+ width: 110px !important;
+ height: 110px !important;
 }</style>
     <foreignObject x="0" y="0" width="100%" height="100%">
         <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" class="items-wrapper">
@@ -31,7 +50,7 @@
                     <div class="row fill-width leetcode scores">
                         <section class="categories">
                             <div class="category column">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="90" height="90" class="gauge all">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="110" height="110" class="gauge all">
                                     <circle class="gauge-base" r="53" cx="60" cy="60"/>
                                     <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="10.74418604651163 329"/>
                                     <text x="60" y="50" dominant-baseline="central">132</text>
@@ -40,7 +59,7 @@
                                 <span class="title">All</span>
                             </div>
                             <div class="category column">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="90" height="90" class="gauge easy">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="110" height="110" class="gauge easy">
                                     <circle class="gauge-base" r="53" cx="60" cy="60"/>
                                     <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="19.493762993762996 329"/>
                                     <text x="60" y="50" dominant-baseline="central">57</text>
@@ -49,7 +68,7 @@
                                 <span class="title">Easy</span>
                             </div>
                             <div class="category column">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="90" height="90" class="gauge medium">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="110" height="110" class="gauge medium">
                                     <circle class="gauge-base" r="53" cx="60" cy="60"/>
                                     <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="10.763869132290184 329"/>
                                     <text x="60" y="50" dominant-baseline="central">69</text>
@@ -58,7 +77,7 @@
                                 <span class="title">Medium</span>
                             </div>
                             <div class="category column">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="90" height="90" class="gauge hard">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="110" height="110" class="gauge hard">
                                     <circle class="gauge-base" r="53" cx="60" cy="60"/>
                                     <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="2.0329557157569513 329"/>
                                     <text x="60" y="50" dominant-baseline="central">6</text>
