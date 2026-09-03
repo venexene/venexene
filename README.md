@@ -18,12 +18,12 @@ Go is my main thing, Python on the side - currently looking for a junior backend
       <img height="195" src="https://github-readme-stats.shion.dev/api?username=venexene&show_icons=true&bg_color=000000&title_color=ffffff&text_color=ffffff&icon_color=00e5ff&ring_color=00e5ff&hide_border=true" alt="GitHub stats" />
     </td>
     <td>
-      <img height="195" src="https://github-readme-stats.shion.dev/api/top-langs/?username=venexene&exclude_repo=imdb-classification,GANImgGen,voice-commands-recognition&layout=compact&bg_color=000000&title_color=ffffff&text_color=ffffff&hide_border=true" alt="Top Langs" />
+      <img height="195" src="https://github-readme-stats.shion.dev/api/top-langs/?username=venexene&exclude_repo=imdb-classification,GANImgGen,voice-commands-recognition&layout=compact&langs_count=7&bg_color=000000&title_color=ffffff&text_color=ffffff&hide_border=true" alt="Top Langs" />
     </td>
   </tr>
 </table>
 
-<img src="./metrics.plugin.leetcode.svg" alt="LeetCode Stats" />
+<img width="100%" src="./metrics.plugin.leetcode.svg" alt="LeetCode Stats" />
 
 <table>
   <tr>
