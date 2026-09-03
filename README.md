@@ -19,11 +19,11 @@
   <img src="https://img.shields.io/badge/Prometheus-000000?style=flat&amp;logo=prometheus&amp;logoColor=00e5ff" alt="Prometheus" />
 </div>
 
-<br />
+<img width="100%" height="4" src="./assets/spacer.svg" alt="" />
 
 <img width="100%" src="./activity-graph.svg" alt="GitHub activity graph" />
 
-<br />
+<img width="100%" height="4" src="./assets/spacer.svg" alt="" />
 
 <table>
   <tr>
@@ -36,11 +36,11 @@
   </tr>
 </table>
 
-<br />
+<img width="100%" height="4" src="./assets/spacer.svg" alt="" />
 
 <img width="100%" src="./metrics.plugin.leetcode.svg?v=wide-330" alt="LeetCode Stats" />
 
-<br />
+<img width="100%" height="4" src="./assets/spacer.svg" alt="" />
 
 <table>
   <tr>
