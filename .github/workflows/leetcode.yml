@@ -13,6 +13,9 @@ jobs:
     permissions:
       contents: write
     steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
       - uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.leetcode.svg
@@ -69,6 +72,8 @@ jobs:
             });
             const leetcodeTitle = document.querySelector("h2.field");
             if (leetcodeTitle) leetcodeTitle.remove();
+      - name: Fetch generated card
+        run: git pull --rebase
       - name: Reserve space for the wide layout
         run: sed -i -E '1 s/height="[0-9]+"/height="380"/' metrics.plugin.leetcode.svg
       - name: Commit corrected card height
