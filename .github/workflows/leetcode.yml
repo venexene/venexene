@@ -26,7 +26,6 @@ jobs:
           extras_css: |
             .items-wrapper {
               box-sizing: border-box;
-              height: 100%;
               padding: 14px 18px;
               background: #000;
               border: 1px solid #fff;
