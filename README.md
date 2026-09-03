@@ -18,13 +18,7 @@
   <img src="https://img.shields.io/badge/SQLite-000000?style=flat&amp;logo=sqlite&amp;logoColor=00e5ff" alt="SQLite" />
   <img src="https://img.shields.io/badge/Prometheus-000000?style=flat&amp;logo=prometheus&amp;logoColor=00e5ff" alt="Prometheus" />
 </div>
-
-<img width="100%" height="4" src="./assets/spacer.svg" alt="" />
-
 <img width="100%" src="./activity-graph.svg" alt="GitHub activity graph" />
-
-<img width="100%" height="4" src="./assets/spacer.svg" alt="" />
-
 <table>
   <tr>
     <td>
@@ -35,13 +29,7 @@
     </td>
   </tr>
 </table>
-
-<img width="100%" height="4" src="./assets/spacer.svg" alt="" />
-
 <img width="100%" src="./metrics.plugin.leetcode.svg?v=wide-330" alt="LeetCode Stats" />
-
-<img width="100%" height="4" src="./assets/spacer.svg" alt="" />
-
 <table>
   <tr>
     <td width="50%" valign="top">
