@@ -31,48 +31,47 @@ Go is my main thing, Python on the side - currently looking for a junior backend
 
 ## What I've done
 
-### [Gorder](https://github.com/venexene/gorder) - order processing service
-
-![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white) ![Gin](https://img.shields.io/badge/Gin-00ADD8?style=flat&logo=go&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white) ![Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat&logo=apachekafka&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white) ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat&logo=prometheus&logoColor=white)
-
-Reads orders from Kafka, validates and stores them in Postgres. In-memory LRU cache, REST API with JWT auth, RBAC, rate limiting, and Swagger docs.
-
-· · ·
-
-### [Goracle](https://github.com/venexene/goracle) - Go knowledge base
-
-![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white) ![MkDocs](https://img.shields.io/badge/MkDocs-526CFE?style=flat&logo=materialformkdocs&logoColor=white) ![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-222222?style=flat&logo=githubpages&logoColor=white)
-
-[venexene.github.io/goracle](https://venexene.github.io/goracle) - scheduler, escape analysis, garbage collector, memory model, concurrency and networking. Notes, diagrams, and code examples.
-
-· · ·
-
-### [Temgo](https://github.com/venexene/temgo) - terminal Pomodoro timer
-
-![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white) ![Bubble Tea](https://img.shields.io/badge/Bubble_Tea-50BFA5?style=flat&labelColor=555) ![Lipgloss](https://img.shields.io/badge/Lipgloss-E06B20?style=flat&labelColor=555)
-
-JSON-based plans, TUI, history in JSONL. Desktop notifications, CI, release v1.0.0.
-
-· · ·
-
-### [Nango](https://github.com/venexene/nango) - URL shortener with analytics
-
-![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-
-Shortens URLs with base62 codes, click analytics by day, month and user-agent. Type-safe SQL via sqlc.
-
-· · ·
-
-### [Gonsai](https://github.com/venexene/gonsai) - comment tree with full-text search
-
-![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat&logo=sqlite&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-
-Nested comments, recursive CTE, FTS5 full-text search with highlighting. Pure net/http, no frameworks.
-
-· · ·
-
-### [Gong](https://github.com/venexene/gong) - delayed notification service
-
-![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white) ![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=flat&logo=rabbitmq&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-
-Delayed delivery via RabbitMQ TTL + Dead-Letter Exchange. Exponential backoff, up to 10 retries.
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/venexene/gorder">Gorder</a></h3>
+      <sub>Order processing service</sub><br /><br />
+      <img src="https://img.shields.io/badge/Go-00ADD8?style=flat&amp;logo=go&amp;logoColor=white" alt="Go" /> <img src="https://img.shields.io/badge/Gin-00ADD8?style=flat&amp;logo=go&amp;logoColor=white" alt="Gin" /> <img src="https://img.shields.io/badge/Kafka-231F20?style=flat&amp;logo=apachekafka&amp;logoColor=white" alt="Kafka" />
+      <br /><br />Kafka order processing with JWT, RBAC, rate limiting, PostgreSQL and Prometheus.
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/venexene/goracle">Goracle</a></h3>
+      <sub>Go knowledge base</sub><br /><br />
+      <img src="https://img.shields.io/badge/Go-00ADD8?style=flat&amp;logo=go&amp;logoColor=white" alt="Go" /> <img src="https://img.shields.io/badge/MkDocs-526CFE?style=flat&amp;logo=materialformkdocs&amp;logoColor=white" alt="MkDocs" />
+      <br /><br />Notes and diagrams on Go internals, concurrency, networking and memory model.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/venexene/temgo">Temgo</a></h3>
+      <sub>Terminal Pomodoro timer</sub><br /><br />
+      <img src="https://img.shields.io/badge/Go-00ADD8?style=flat&amp;logo=go&amp;logoColor=white" alt="Go" /> <img src="https://img.shields.io/badge/Bubble_Tea-50BFA5?style=flat&amp;labelColor=555" alt="Bubble Tea" />
+      <br /><br />JSON plans, TUI, history, desktop notifications, CI and releases.
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/venexene/nango">Nango</a></h3>
+      <sub>URL shortener with analytics</sub><br /><br />
+      <img src="https://img.shields.io/badge/Go-00ADD8?style=flat&amp;logo=go&amp;logoColor=white" alt="Go" /> <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&amp;logo=postgresql&amp;logoColor=white" alt="PostgreSQL" />
+      <br /><br />Base62 links with daily, monthly and user-agent analytics via sqlc.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/venexene/gonsai">Gonsai</a></h3>
+      <sub>Comment tree with full-text search</sub><br /><br />
+      <img src="https://img.shields.io/badge/Go-00ADD8?style=flat&amp;logo=go&amp;logoColor=white" alt="Go" /> <img src="https://img.shields.io/badge/SQLite-003B57?style=flat&amp;logo=sqlite&amp;logoColor=white" alt="SQLite" />
+      <br /><br />Nested comments, recursive CTE, FTS5 highlighting and pure net/http.
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/venexene/gong">Gong</a></h3>
+      <sub>Delayed notification service</sub><br /><br />
+      <img src="https://img.shields.io/badge/Go-00ADD8?style=flat&amp;logo=go&amp;logoColor=white" alt="Go" /> <img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=flat&amp;logo=rabbitmq&amp;logoColor=white" alt="RabbitMQ" />
+      <br /><br />RabbitMQ TTL and DLX delivery with exponential backoff and ten retries.
+    </td>
+  </tr>
+</table>
