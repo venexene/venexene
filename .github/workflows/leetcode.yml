@@ -70,7 +70,7 @@ jobs:
             const leetcodeTitle = document.querySelector("h2.field");
             if (leetcodeTitle) leetcodeTitle.remove();
       - name: Reserve space for the wide layout
-        run: sed -i -E '1 s/height="[0-9]+"/height="460"/' metrics.plugin.leetcode.svg
+        run: sed -i -E '1 s/height="[0-9]+"/height="380"/' metrics.plugin.leetcode.svg
       - name: Commit corrected card height
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
