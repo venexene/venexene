@@ -1,12 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="156" viewBox="0 0 900 156" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="140" viewBox="0 0 900 140" role="img" aria-labelledby="title desc">
   <title id="title">Alecksey Shpuganich</title>
   <desc id="desc">Go backend developer interested in machine learning and computer graphics.</desc>
-  <rect width="900" height="156" rx="10" fill="#000" stroke="#fff"/>
-  <rect width="7" height="156" rx="3.5" fill="#00e5ff"/>
-  <circle cx="858" cy="34" r="8" fill="#00e5ff"/>
-  <text x="32" y="49" fill="#fff" font-family="Arial, sans-serif" font-size="31" font-weight="700">Alecksey Shpuganich</text>
-  <text x="32" y="75" fill="#00e5ff" font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.3">GO BACKEND DEVELOPER</text>
-  <path d="M32 94H868" stroke="#333"/>
-  <text x="32" y="121" fill="#d1d5db" font-family="Arial, sans-serif" font-size="16">Go is my main thing, Python on the side. Currently looking for a junior backend position.</text>
-  <text x="32" y="143" fill="#a6a6a6" font-family="Arial, sans-serif" font-size="14">Machine learning · Computer graphics · Backend systems</text>
+  <rect width="900" height="140" rx="10" fill="#000" stroke="#fff"/>
+  <text x="450" y="49" fill="#fff" font-family="Arial, sans-serif" font-size="31" font-weight="700" text-anchor="middle">Alecksey Shpuganich</text>
+  <text x="450" y="75" fill="#00e5ff" font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.3" text-anchor="middle">GO BACKEND DEVELOPER</text>
+  <path d="M128 94H772" stroke="#333"/>
+  <text x="450" y="121" fill="#a6a6a6" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Backend systems · Machine learning · Computer graphics</text>
 </svg>

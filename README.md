@@ -1,10 +1,23 @@
 <img width="100%" src="./assets/profile-header.svg" alt="Alecksey Shpuganich — Go backend developer" />
 
-![Profile views](https://komarev.com/ghpvc/?username=venexene&label=Profile%20views&color=00e5ff&style=flat)
-
-[![GitHub](https://img.shields.io/badge/GitHub-venexene-000000?style=flat&logo=github&logoColor=00e5ff)](https://github.com/venexene) [![Telegram](https://img.shields.io/badge/Telegram-%40Flayven-000000?style=flat&logo=telegram&logoColor=00e5ff)](https://t.me/Flayven) [![Email](https://img.shields.io/badge/Email-flayven.marlon%40gmail.com-000000?style=flat&logo=gmail&logoColor=00e5ff)](mailto:flayven.marlon@gmail.com) [![LeetCode](https://img.shields.io/badge/LeetCode-venexene-000000?style=flat&logo=leetcode&logoColor=00e5ff)](https://leetcode.com/venexene) [![Resume](https://img.shields.io/badge/Resume-PDF-000000?style=flat&logo=adobeacrobatreader&logoColor=00e5ff)](./resume.pdf)
-
-![Go](https://img.shields.io/badge/Go-000000?style=flat&logo=go&logoColor=00e5ff) ![Python](https://img.shields.io/badge/Python-000000?style=flat&logo=python&logoColor=00e5ff) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-000000?style=flat&logo=postgresql&logoColor=00e5ff) ![Kafka](https://img.shields.io/badge/Kafka-000000?style=flat&logo=apachekafka&logoColor=00e5ff) ![RabbitMQ](https://img.shields.io/badge/RabbitMQ-000000?style=flat&logo=rabbitmq&logoColor=00e5ff) ![Docker](https://img.shields.io/badge/Docker-000000?style=flat&logo=docker&logoColor=00e5ff) ![SQLite](https://img.shields.io/badge/SQLite-000000?style=flat&logo=sqlite&logoColor=00e5ff) ![Prometheus](https://img.shields.io/badge/Prometheus-000000?style=flat&logo=prometheus&logoColor=00e5ff)
+<div align="center">
+  <sub><b>CONNECT</b></sub><br />
+  <a href="https://github.com/venexene"><img src="https://img.shields.io/badge/GitHub-venexene-000000?style=flat&amp;logo=github&amp;logoColor=00e5ff" alt="GitHub" /></a>
+  <a href="https://t.me/Flayven"><img src="https://img.shields.io/badge/Telegram-%40Flayven-000000?style=flat&amp;logo=telegram&amp;logoColor=00e5ff" alt="Telegram" /></a>
+  <a href="mailto:flayven.marlon@gmail.com"><img src="https://img.shields.io/badge/Email-flayven.marlon%40gmail.com-000000?style=flat&amp;logo=gmail&amp;logoColor=00e5ff" alt="Email" /></a>
+  <a href="https://leetcode.com/venexene"><img src="https://img.shields.io/badge/LeetCode-venexene-000000?style=flat&amp;logo=leetcode&amp;logoColor=00e5ff" alt="LeetCode" /></a>
+  <a href="./resume.pdf"><img src="https://img.shields.io/badge/Resume-PDF-000000?style=flat&amp;logo=adobeacrobatreader&amp;logoColor=00e5ff" alt="Resume" /></a>
+  <br /><br />
+  <sub><b>STACK</b></sub><br />
+  <img src="https://img.shields.io/badge/Go-000000?style=flat&amp;logo=go&amp;logoColor=00e5ff" alt="Go" />
+  <img src="https://img.shields.io/badge/Python-000000?style=flat&amp;logo=python&amp;logoColor=00e5ff" alt="Python" />
+  <img src="https://img.shields.io/badge/PostgreSQL-000000?style=flat&amp;logo=postgresql&amp;logoColor=00e5ff" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/Kafka-000000?style=flat&amp;logo=apachekafka&amp;logoColor=00e5ff" alt="Kafka" />
+  <img src="https://img.shields.io/badge/RabbitMQ-000000?style=flat&amp;logo=rabbitmq&amp;logoColor=00e5ff" alt="RabbitMQ" />
+  <img src="https://img.shields.io/badge/Docker-000000?style=flat&amp;logo=docker&amp;logoColor=00e5ff" alt="Docker" />
+  <img src="https://img.shields.io/badge/SQLite-000000?style=flat&amp;logo=sqlite&amp;logoColor=00e5ff" alt="SQLite" />
+  <img src="https://img.shields.io/badge/Prometheus-000000?style=flat&amp;logo=prometheus&amp;logoColor=00e5ff" alt="Prometheus" />
+</div>
 
 ---
 
