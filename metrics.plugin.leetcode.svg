@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="99999" class="">
-=======
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="320" class="">
->>>>>>> cfa8f3e (docs: update projects list)
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="99999" class="large">
     <defs>
         <style/>
     </defs>
@@ -15,19 +11,18 @@
  border: 1px solid #fff;
  border-radius: 8px;
  color: #d1d5db;
-<<<<<<< HEAD
 }
 .items-wrapper svg { color: #00e5ff; }
-.items-wrapper .label {
-=======
-}.items-wrapper svg { color: #00e5ff; }.items-wrapper &gt; section {
+.items-wrapper &gt; section {
  display: grid;
  grid-template-columns: 1fr 1fr;
  column-gap: 20px;
-}.items-wrapper &gt; section &gt; section:first-child {
+}
+.items-wrapper &gt; section &gt; section:first-child {
  grid-column: 1 / -1;
-}.leetcode.subsection { padding-left: 0; }.items-wrapper .label {
->>>>>>> cfa8f3e (docs: update projects list)
+}
+.leetcode.subsection { padding-left: 0; }
+.items-wrapper .label {
  background-color: #00e5ff22;
  color: #00e5ff;
 }
