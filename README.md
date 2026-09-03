@@ -34,7 +34,7 @@
   </tr>
 </table>
 
-<img width="100%" src="./metrics.plugin.leetcode.svg" alt="LeetCode Stats" />
+<img width="100%" src="./metrics.plugin.leetcode.svg?v=484f02e" alt="LeetCode Stats" />
 
 <table>
   <tr>
