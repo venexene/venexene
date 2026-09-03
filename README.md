@@ -18,6 +18,9 @@
   <img src="https://img.shields.io/badge/SQLite-000000?style=flat&amp;logo=sqlite&amp;logoColor=00e5ff" alt="SQLite" />
   <img src="https://img.shields.io/badge/Prometheus-000000?style=flat&amp;logo=prometheus&amp;logoColor=00e5ff" alt="Prometheus" />
 </div>
+
+---
+
 <img width="100%" src="./activity-graph.svg" alt="GitHub activity graph" />
 <table>
   <tr>
