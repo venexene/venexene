@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="220" viewBox="0 0 450 220" role="img" aria-labelledby="title desc">
+  <title id="title">Gonsai</title>
+  <desc id="desc">COMMENT TREE + FULL-TEXT SEARCH</desc>
+  <rect width="450" height="220" rx="10" fill="#000" stroke="#fff"/>
+  <rect x="0" y="0" width="7" height="220" rx="3.5" fill="#fb7185"/>
+  <circle cx="418" cy="30" r="8" fill="#fb7185"/>
+  <text x="28" y="42" fill="#fff" font-family="Arial, sans-serif" font-size="25" font-weight="700">Gonsai</text>
+  <text x="28" y="66" fill="#fb7185" font-family="Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.1">COMMENT TREE + FULL-TEXT SEARCH</text>
+  <path d="M28 86H422" stroke="#333"/>
+  <text x="28" y="114" fill="#d1d5db" font-family="Arial, sans-serif" font-size="14">Nested comments, recursive CTE, FTS5</text>
+  <text x="28" y="136" fill="#d1d5db" font-family="Arial, sans-serif" font-size="14">highlighting and pure net/http.</text>
+  <rect x="28" y="174" width="40" height="24" rx="12" fill="#fb7185" fill-opacity=".16" stroke="#fb7185" stroke-opacity=".65"/><text x="48" y="190" text-anchor="middle" fill="#fff" font-size="11" font-weight="600">Go</text><rect x="76" y="174" width="68" height="24" rx="12" fill="#fb7185" fill-opacity=".16" stroke="#fb7185" stroke-opacity=".65"/><text x="110" y="190" text-anchor="middle" fill="#fff" font-size="11" font-weight="600">SQLite</text><rect x="152" y="174" width="68" height="24" rx="12" fill="#fb7185" fill-opacity=".16" stroke="#fb7185" stroke-opacity=".65"/><text x="186" y="190" text-anchor="middle" fill="#fff" font-size="11" font-weight="600">Docker</text>
+</svg>

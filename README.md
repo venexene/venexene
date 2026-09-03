@@ -34,49 +34,31 @@ Go is my main thing, Python on the side - currently looking for a junior backend
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/venexene/gorder">Gorder</a></h3>
-      <sub>Order processing service</sub><br /><br />
-      <img src="https://img.shields.io/badge/Go-00ADD8?style=flat&amp;logo=go&amp;logoColor=white" alt="Go" /> <img src="https://img.shields.io/badge/Gin-00ADD8?style=flat&amp;logo=go&amp;logoColor=white" alt="Gin" /> <img src="https://img.shields.io/badge/Kafka-231F20?style=flat&amp;logo=apachekafka&amp;logoColor=white" alt="Kafka" />
-      <br /><br />Kafka order processing with JWT, RBAC, rate limiting, PostgreSQL and Prometheus.
+      <a href="https://github.com/venexene/gorder"><img src="./assets/projects/gorder.svg" alt="Gorder — order processing service" /></a>
       <p><a href="https://github.com/venexene/gorder/actions/workflows/ci.yml"><img src="https://github.com/venexene/gorder/actions/workflows/ci.yml/badge.svg?branch=main" alt="Gorder CI status" /></a></p>
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/venexene/goracle">Goracle</a></h3>
-      <sub>Go knowledge base</sub><br /><br />
-      <img src="https://img.shields.io/badge/Go-00ADD8?style=flat&amp;logo=go&amp;logoColor=white" alt="Go" /> <img src="https://img.shields.io/badge/MkDocs-526CFE?style=flat&amp;logo=materialformkdocs&amp;logoColor=white" alt="MkDocs" />
-      <br /><br />Notes and diagrams on Go internals, concurrency, networking and memory model.
+      <a href="https://github.com/venexene/goracle"><img src="./assets/projects/goracle.svg" alt="Goracle — Go knowledge base" /></a>
       <p><a href="https://github.com/venexene/goracle/actions/workflows/quality.yml"><img src="https://github.com/venexene/goracle/actions/workflows/quality.yml/badge.svg?branch=main" alt="Goracle quality status" /></a> <a href="https://github.com/venexene/goracle/actions/workflows/deploy.yml"><img src="https://github.com/venexene/goracle/actions/workflows/deploy.yml/badge.svg?branch=main" alt="Goracle deploy status" /></a></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/venexene/temgo">Temgo</a></h3>
-      <sub>Terminal Pomodoro timer</sub><br /><br />
-      <img src="https://img.shields.io/badge/Go-00ADD8?style=flat&amp;logo=go&amp;logoColor=white" alt="Go" /> <img src="https://img.shields.io/badge/Bubble_Tea-50BFA5?style=flat&amp;labelColor=555" alt="Bubble Tea" />
-      <br /><br />JSON plans, TUI, history, desktop notifications, CI and releases.
+      <a href="https://github.com/venexene/temgo"><img src="./assets/projects/temgo.svg" alt="Temgo — terminal Pomodoro timer" /></a>
       <p><a href="https://github.com/venexene/temgo/actions/workflows/ci.yml"><img src="https://github.com/venexene/temgo/actions/workflows/ci.yml/badge.svg?branch=main" alt="Temgo CI status" /></a></p>
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/venexene/nango">Nango</a></h3>
-      <sub>URL shortener with analytics</sub><br /><br />
-      <img src="https://img.shields.io/badge/Go-00ADD8?style=flat&amp;logo=go&amp;logoColor=white" alt="Go" /> <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&amp;logo=postgresql&amp;logoColor=white" alt="PostgreSQL" />
-      <br /><br />Base62 links with daily, monthly and user-agent analytics via sqlc.
+      <a href="https://github.com/venexene/nango"><img src="./assets/projects/nango.svg" alt="Nango — URL shortener with analytics" /></a>
       <p><a href="https://github.com/venexene/nango/actions/workflows/ci.yml"><img src="https://github.com/venexene/nango/actions/workflows/ci.yml/badge.svg?branch=main" alt="Nango CI status" /></a></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/venexene/gonsai">Gonsai</a></h3>
-      <sub>Comment tree with full-text search</sub><br /><br />
-      <img src="https://img.shields.io/badge/Go-00ADD8?style=flat&amp;logo=go&amp;logoColor=white" alt="Go" /> <img src="https://img.shields.io/badge/SQLite-003B57?style=flat&amp;logo=sqlite&amp;logoColor=white" alt="SQLite" />
-      <br /><br />Nested comments, recursive CTE, FTS5 highlighting and pure net/http.
+      <a href="https://github.com/venexene/gonsai"><img src="./assets/projects/gonsai.svg" alt="Gonsai — comment tree with full-text search" /></a>
       <p><a href="https://github.com/venexene/gonsai/actions/workflows/ci.yml"><img src="https://github.com/venexene/gonsai/actions/workflows/ci.yml/badge.svg?branch=main" alt="Gonsai CI status" /></a></p>
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/venexene/gong">Gong</a></h3>
-      <sub>Delayed notification service</sub><br /><br />
-      <img src="https://img.shields.io/badge/Go-00ADD8?style=flat&amp;logo=go&amp;logoColor=white" alt="Go" /> <img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=flat&amp;logo=rabbitmq&amp;logoColor=white" alt="RabbitMQ" />
-      <br /><br />RabbitMQ TTL and DLX delivery with exponential backoff and ten retries.
+      <a href="https://github.com/venexene/gong"><img src="./assets/projects/gong.svg" alt="Gong — delayed notification service" /></a>
       <p><a href="https://github.com/venexene/gong/actions/workflows/ci.yml"><img src="https://github.com/venexene/gong/actions/workflows/ci.yml/badge.svg?branch=main" alt="Gong CI status" /></a></p>
     </td>
   </tr>
