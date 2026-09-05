@@ -55,9 +55,10 @@ const gridLines = [0, 0.25, 0.5, 0.75, 1].map((ratio) => {
   const y = top + chartHeight - ratio * chartHeight;
   return `<path d="M${left} ${y}H${width - right}"/>`;
 }).join("");
-const gridValues = [0, 0.25, 0.5, 0.75, 1].map((ratio) => {
+const intensityLabels = ["none", "low", "mid", "high", "peak"];
+const gridValues = [0, 0.25, 0.5, 0.75, 1].map((ratio, index) => {
   const y = top + chartHeight - ratio * chartHeight;
-  return `<text x="${left - 10}" y="${y + 4}" text-anchor="end">${Math.round(maximum * ratio)}</text>`;
+  return `<text x="${left - 10}" y="${y + 4}" text-anchor="end">${intensityLabels[index]}</text>`;
 }).join("");
 const labels = [0, 7, 14, 21, 30].map((index) => {
   const { x } = points[index];
@@ -67,7 +68,7 @@ const circles = points.map(({ x, y }, index) => `<circle cx="${x}" cy="${y}" r="
 
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="title desc">
   <title id="title">GitHub Activity Graph for ${login}</title>
-  <desc id="desc">Daily public GitHub contribution activity during the last 31 days.</desc>
+  <desc id="desc">Daily public GitHub contribution intensity during the last 31 days, shown on GitHub's five-level scale rather than as contribution counts.</desc>
   <defs><linearGradient id="fill" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#00e5ff" stop-opacity=".35"/><stop offset="1" stop-color="#00e5ff" stop-opacity="0"/></linearGradient></defs>
   <rect width="100%" height="100%" rx="8" fill="#000" stroke="#fff"/>
   <text x="${left}" y="31" fill="#fff" font-family="Arial, sans-serif" font-size="18" font-weight="600">GitHub Activity Graph</text>
