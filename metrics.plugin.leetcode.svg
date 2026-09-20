@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="330" class="large">
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="286" class="large">
     <defs>
         <style/>
     </defs>
@@ -51,8 +51,8 @@
                             <div class="category column">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="110" height="110" class="gauge all">
                                     <circle class="gauge-base" r="53" cx="60" cy="60"/>
-                                    <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="13.387176325524045 329"/>
-                                    <text x="60" y="50" dominant-baseline="central">165</text>
+                                    <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="14.279654747225647 329"/>
+                                    <text x="60" y="50" dominant-baseline="central">176</text>
                                     <text x="60" y="80" dominant-baseline="central" class="secondary">/4055</text>
                                 </svg>
                                 <span class="title">All</span>
@@ -60,8 +60,8 @@
                             <div class="category column">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="110" height="110" class="gauge easy">
                                     <circle class="gauge-base" r="53" cx="60" cy="60"/>
-                                    <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="26.592746113989637 329"/>
-                                    <text x="60" y="50" dominant-baseline="central">78</text>
+                                    <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="27.956476683937826 329"/>
+                                    <text x="60" y="50" dominant-baseline="central">82</text>
                                     <text x="60" y="80" dominant-baseline="central" class="secondary">/965</text>
                                 </svg>
                                 <span class="title">Easy</span>
@@ -69,8 +69,8 @@
                             <div class="category column">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="110" height="110" class="gauge medium">
                                     <circle class="gauge-base" r="53" cx="60" cy="60"/>
-                                    <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="12.444444444444445 329"/>
-                                    <text x="60" y="50" dominant-baseline="central">80</text>
+                                    <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="13.377777777777778 329"/>
+                                    <text x="60" y="50" dominant-baseline="central">86</text>
                                     <text x="60" y="80" dominant-baseline="central" class="secondary">/2115</text>
                                 </svg>
                                 <span class="title">Medium</span>
@@ -78,8 +78,8 @@
                             <div class="category column">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="110" height="110" class="gauge hard">
                                     <circle class="gauge-base" r="53" cx="60" cy="60"/>
-                                    <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="2.362051282051282 329"/>
-                                    <text x="60" y="50" dominant-baseline="central">7</text>
+                                    <circle class="gauge-arc" transform="rotate(-90 60 60)" r="53" cx="60" cy="60" stroke-dasharray="2.6994871794871793 329"/>
+                                    <text x="60" y="50" dominant-baseline="central">8</text>
                                     <text x="60" y="80" dominant-baseline="central" class="secondary">/975</text>
                                 </svg>
                                 <span class="title">Hard</span>
@@ -96,7 +96,7 @@
                     </h2>
                     <div class="topics">
                         <div class="label fundamental"><span class="dot">⬤</span> Array <span class="count">x67</span></div>
-                        <div class="label intermediate"><span class="dot">⬤</span> Database <span class="count">x37</span></div>
+                        <div class="label intermediate"><span class="dot">⬤</span> Database <span class="count">x48</span></div>
                         <div class="label intermediate"><span class="dot">⬤</span> Hash Table <span class="count">x31</span></div>
                         <div class="label fundamental"><span class="dot">⬤</span> String <span class="count">x30</span></div>
                         <div class="label fundamental"><span class="dot">⬤</span> Two Pointers <span class="count">x23</span></div>
@@ -119,8 +119,8 @@
                             <path fill-rule="evenodd" d="M8 5.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM4 8a4 4 0 118 0 4 4 0 01-8 0z"/>
                         </svg>
                         <div class="infos">
-                            <div class="title">Count Salary Categories</div>
-                            <div class="date">18 Sept 2026</div>
+                            <div class="title">Second Highest Salary</div>
+                            <div class="date">19 Sept 2026</div>
                         </div>
                     </div>
                     <div class="field">
@@ -128,8 +128,8 @@
                             <path fill-rule="evenodd" d="M8 5.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM4 8a4 4 0 118 0 4 4 0 01-8 0z"/>
                         </svg>
                         <div class="infos">
-                            <div class="title">Last Person to Fit in the Bus</div>
-                            <div class="date">18 Sept 2026</div>
+                            <div class="title">Delete Duplicate Emails</div>
+                            <div class="date">19 Sept 2026</div>
                         </div>
                     </div>
                 </section>
