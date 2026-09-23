@@ -3,7 +3,7 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 const items = [
   { file: "telegram", label: "TELEGRAM", value: "@Flayven", logo: "telegram" },
   { file: "email", label: "EMAIL", value: "SEND EMAIL", logo: "gmail" },
-  { file: "leetcode", label: "LEETCODE", value: "venexene", logo: "leetcode", labelSize: 12 },
+  { file: "leetcode", label: "LEETCODE", value: "venexene", logo: "leetcode" },
   { file: "resume", label: "RESUME", value: "OPEN PDF" },
 ];
 
