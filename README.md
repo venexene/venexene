@@ -23,6 +23,7 @@
   </tr>
 </table>
 <img width="100%" src="./metrics.plugin.leetcode.svg?v=wide-330" alt="LeetCode Stats" />
+<a href="https://github.com/venexene"><img width="100%" src="./assets/now-building.svg" alt="Now building — dynamically updated featured project" /></a>
 <table>
   <tr>
     <td width="50%" valign="top">

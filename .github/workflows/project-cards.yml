@@ -9,6 +9,7 @@ on:
     paths:
       - ".github/workflows/project-cards.yml"
       - "scripts/generate-project-cards.mjs"
+      - "scripts/generate-now-building.mjs"
 
 permissions:
   contents: write
@@ -28,7 +29,9 @@ jobs:
       - name: Generate cards
         env:
           GITHUB_TOKEN: ${{ github.token }}
-        run: npm run generate:projects
+        run: |
+          npm run generate:projects
+          npm run generate:now
       - name: Commit updated cards
         uses: stefanzweifel/git-auto-commit-action@28e16e81777b558cc906c8750092100bbb34c5e3 # v7.0.0
         with:
@@ -36,3 +39,5 @@ jobs:
           file_pattern: |
             assets/projects/*.svg
             assets/projects/metrics.json
+            assets/now-building.svg
+            assets/now-building.json

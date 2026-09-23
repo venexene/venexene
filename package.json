@@ -5,9 +5,10 @@
     "generate:activity": "node scripts/generate-activity-graph.mjs",
     "generate:header": "node scripts/generate-profile-header.mjs",
     "generate:projects": "node scripts/generate-project-cards.mjs",
+    "generate:now": "node scripts/generate-now-building.mjs",
     "generate:connect": "node scripts/generate-connect-cards.mjs",
     "generate:stack": "node scripts/generate-stack-card.mjs",
-    "check": "node --check scripts/generate-activity-graph.mjs && node --check scripts/generate-project-cards.mjs && node --check scripts/generate-connect-cards.mjs && node --check scripts/generate-profile-header.mjs && node --check scripts/generate-stack-card.mjs"
+    "check": "node --check scripts/generate-activity-graph.mjs && node --check scripts/generate-project-cards.mjs && node --check scripts/generate-now-building.mjs && node --check scripts/generate-connect-cards.mjs && node --check scripts/generate-profile-header.mjs && node --check scripts/generate-stack-card.mjs"
   },
   "engines": {
     "node": ">=22"
