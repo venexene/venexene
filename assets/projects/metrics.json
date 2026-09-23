@@ -1,0 +1,50 @@
+{
+  "gorder": {
+    "stars": 1,
+    "commits": 80,
+    "status": {
+      "label": "CI PASSED",
+      "color": "#00e5ff"
+    }
+  },
+  "goracle": {
+    "stars": 1,
+    "commits": 49,
+    "status": {
+      "label": "CI PASSED",
+      "color": "#00e5ff"
+    }
+  },
+  "temgo": {
+    "stars": 1,
+    "commits": 42,
+    "status": {
+      "label": "CI PASSED",
+      "color": "#00e5ff"
+    }
+  },
+  "nango": {
+    "stars": 0,
+    "commits": 22,
+    "status": {
+      "label": "CI PASSED",
+      "color": "#00e5ff"
+    }
+  },
+  "gonsai": {
+    "stars": 0,
+    "commits": 20,
+    "status": {
+      "label": "CI PASSED",
+      "color": "#00e5ff"
+    }
+  },
+  "gong": {
+    "stars": 0,
+    "commits": 23,
+    "status": {
+      "label": "CI PASSED",
+      "color": "#00e5ff"
+    }
+  }
+}

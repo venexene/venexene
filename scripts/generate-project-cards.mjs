@@ -1,4 +1,4 @@
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 
 const projects = [
   {
@@ -50,6 +50,13 @@ const escapeXml = (text) => text.replace(/[&<>"']/g, (character) => ({
 }[character]));
 
 const accent = "#00e5ff";
+const metricsPath = "assets/projects/metrics.json";
+let cachedMetrics = {};
+try {
+  cachedMetrics = JSON.parse(await readFile(metricsPath, "utf8"));
+} catch {
+  // The first generation creates the cache after collecting live data.
+}
 const githubHeaders = process.env.GITHUB_TOKEN ? { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` } : {};
 
 const fetchJson = async (url) => {
@@ -87,10 +94,11 @@ const getProjectData = async (project) => {
   const [repositoryResult, runsResult, commits] = await Promise.all([fetchJson(repositoryUrl), fetchJson(runsUrl), getCommitCount(commitsUrl)]);
   const repository = repositoryResult.data;
   const runs = runsResult.data;
+  const cached = cachedMetrics[project.file] ?? {};
   const signalRuns = runs?.workflow_runs?.filter((run) => ["push", "pull_request"].includes(run.event));
   const latestRun = signalRuns?.[0] ?? runs?.workflow_runs?.[0];
   const status = !runsResult.ok
-    ? { label: "CI UNAVAILABLE", color: "#facc15" }
+    ? cached.status ?? { label: "CI UNAVAILABLE", color: "#facc15" }
     : !latestRun
     ? { label: "NO CI", color: "#6b7280" }
     : latestRun.status !== "completed"
@@ -98,7 +106,11 @@ const getProjectData = async (project) => {
       : latestRun.conclusion === "success"
         ? { label: "CI PASSED", color: accent }
         : { label: "CI FAILED", color: "#fb7185" };
-  return { stars: repository?.stargazers_count ?? "—", commits, status };
+  return {
+    stars: repository?.stargazers_count ?? cached.stars ?? "—",
+    commits: commits === "—" ? cached.commits ?? "—" : commits,
+    status,
+  };
 };
 
 const makePills = (stack) => {
@@ -114,6 +126,7 @@ const makePills = (stack) => {
 const makeFooter = ({ stars, commits, status }) => `<path d="M28 224H422" stroke="#2b2b2b"/><path d="M159 233V260M291 233V260" stroke="#252f35"/><text x="93" y="241" text-anchor="middle" fill="#71808a" font-family="Arial, sans-serif" font-size="9" font-weight="700" letter-spacing="1">STARS</text><text x="93" y="258" text-anchor="middle" fill="#e7faff" font-family="Arial, sans-serif" font-size="13" font-weight="700">★ ${stars}</text><text x="225" y="241" text-anchor="middle" fill="#71808a" font-family="Arial, sans-serif" font-size="9" font-weight="700" letter-spacing="1">COMMITS</text><text x="225" y="258" text-anchor="middle" fill="#e7faff" font-family="Arial, sans-serif" font-size="13" font-weight="700">${commits}</text><text x="357" y="241" text-anchor="middle" fill="#71808a" font-family="Arial, sans-serif" font-size="9" font-weight="700" letter-spacing="1">CI STATUS</text><text x="357" y="258" text-anchor="middle" fill="${status.color}" font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing=".4">${status.label}</text>`;
 
 const metrics = new Map(await Promise.all(projects.map(async (project) => [project.file, await getProjectData(project)])));
+await writeFile(metricsPath, `${JSON.stringify(Object.fromEntries(metrics), null, 2)}\n`);
 await mkdir("assets/projects", { recursive: true });
 await Promise.all(projects.map(async (project) => {
   const data = metrics.get(project.file);
