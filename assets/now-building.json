@@ -1,9 +1,9 @@
 {
   "file": "concurrency-practice",
-  "name": "Concurrency Practice",
-  "type": "GO CONCURRENCY PRACTICE",
-  "commit": "feat: add channel-map",
-  "updatedAt": "2026-09-23T12:06:04+03:00",
+  "name": "concurrency-practice",
+  "type": "CONCURRENCY TASKS AND NOTES",
+  "commit": "feat: add non-blocking-send",
+  "updatedAt": "2026-09-23T12:21:30Z",
   "status": {
     "label": "NO CI",
     "color": "#6b7280"
