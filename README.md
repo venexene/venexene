@@ -1,34 +1,12 @@
-<table>
-  <tr>
-    <td width="27%" align="center" valign="middle">
-      <img src="./avatar.gif" width="200" alt="Animated portrait of Alecksey Shpuganich" />
-      <br />
-      <sub><b>LIVE PORTRAIT</b> · TRANSMISSION ACTIVE</sub>
-    </td>
-    <td width="73%" valign="middle">
-      <img width="100%" src="./assets/profile-header.svg" alt="Alecksey Shpuganich — Go backend developer" />
-    </td>
-  </tr>
-</table>
-
+<img width="100%" src="./assets/profile-header.svg" alt="Alecksey Shpuganich — Go backend developer" />
 <div align="center">
-  <sub><b>CONNECT</b></sub><br />
-  <a href="https://github.com/venexene"><img src="https://img.shields.io/badge/GitHub-venexene-000000?style=flat&amp;logo=github&amp;logoColor=00e5ff" alt="GitHub" /></a>
-  <a href="https://t.me/Flayven"><img src="https://img.shields.io/badge/Telegram-%40Flayven-000000?style=flat&amp;logo=telegram&amp;logoColor=00e5ff" alt="Telegram" /></a>
-  <a href="mailto:flayven.marlon@gmail.com"><img src="https://img.shields.io/badge/Email-flayven.marlon%40gmail.com-000000?style=flat&amp;logo=gmail&amp;logoColor=00e5ff" alt="Email" /></a>
-  <a href="https://leetcode.com/venexene"><img src="https://img.shields.io/badge/LeetCode-venexene-000000?style=flat&amp;logo=leetcode&amp;logoColor=00e5ff" alt="LeetCode" /></a>
-  <a href="./resume.pdf"><img src="https://img.shields.io/badge/Resume-PDF-000000?style=flat&amp;logo=adobeacrobatreader&amp;logoColor=00e5ff" alt="Resume" /></a>
-  <br /><br />
-  <sub><b>STACK</b></sub><br />
-  <img src="https://img.shields.io/badge/Go-000000?style=flat&amp;logo=go&amp;logoColor=00e5ff" alt="Go" />
-  <img src="https://img.shields.io/badge/Python-000000?style=flat&amp;logo=python&amp;logoColor=00e5ff" alt="Python" />
-  <img src="https://img.shields.io/badge/PostgreSQL-000000?style=flat&amp;logo=postgresql&amp;logoColor=00e5ff" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/Kafka-000000?style=flat&amp;logo=apachekafka&amp;logoColor=00e5ff" alt="Kafka" />
-  <img src="https://img.shields.io/badge/RabbitMQ-000000?style=flat&amp;logo=rabbitmq&amp;logoColor=00e5ff" alt="RabbitMQ" />
-  <img src="https://img.shields.io/badge/Docker-000000?style=flat&amp;logo=docker&amp;logoColor=00e5ff" alt="Docker" />
-  <img src="https://img.shields.io/badge/SQLite-000000?style=flat&amp;logo=sqlite&amp;logoColor=00e5ff" alt="SQLite" />
-  <img src="https://img.shields.io/badge/Prometheus-000000?style=flat&amp;logo=prometheus&amp;logoColor=00e5ff" alt="Prometheus" />
+  <a href="https://github.com/venexene"><img src="./assets/connect/github.svg" alt="GitHub: venexene" /></a>
+  <a href="https://t.me/Flayven"><img src="./assets/connect/telegram.svg" alt="Telegram: @Flayven" /></a>
+  <a href="mailto:flayven.marlon@gmail.com"><img src="./assets/connect/email.svg" alt="Email: flayven.marlon@gmail.com" /></a>
+  <a href="https://leetcode.com/venexene"><img src="./assets/connect/leetcode.svg" alt="LeetCode: venexene" /></a>
+  <a href="./resume.pdf"><img src="./assets/connect/resume.svg" alt="Open resume PDF" /></a>
 </div>
+<img width="100%" src="./assets/stack.svg" alt="Technical stack: Go, Python, PostgreSQL, Kafka, RabbitMQ, Docker, SQLite and Prometheus" />
 
 ---
 
