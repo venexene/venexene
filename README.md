@@ -11,6 +11,8 @@
 </table>
 <img width="100%" src="./assets/stack.svg" alt="Technical stack: Go, Python, PostgreSQL, Kafka, RabbitMQ, Docker, SQLite and Prometheus" />
 
+<a href="https://github.com/venexene"><img width="100%" src="./assets/now-building.svg" alt="Now building — dynamically updated featured project" /></a>
+
 <img width="100%" src="./activity-graph.svg" alt="GitHub activity graph" />
 <table>
   <tr>
@@ -23,7 +25,6 @@
   </tr>
 </table>
 <img width="100%" src="./metrics.plugin.leetcode.svg?v=wide-330" alt="LeetCode Stats" />
-<a href="https://github.com/venexene"><img width="100%" src="./assets/now-building.svg" alt="Now building — dynamically updated featured project" /></a>
 <table>
   <tr>
     <td width="50%" valign="top">

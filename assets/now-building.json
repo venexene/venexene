@@ -1,7 +1,11 @@
 {
-  "file": "goracle",
-  "name": "Goracle",
-  "type": "GO KNOWLEDGE BASE",
-  "commit": "Waiting for the next project sync",
-  "updatedAt": "2026-09-17T08:18:21Z"
+  "file": "concurrency-practice",
+  "name": "Concurrency Practice",
+  "type": "GO CONCURRENCY PRACTICE",
+  "commit": "feat: add channel-map",
+  "updatedAt": "2026-09-23T12:06:04+03:00",
+  "status": {
+    "label": "NO CI",
+    "color": "#6b7280"
+  }
 }
