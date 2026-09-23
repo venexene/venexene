@@ -1,4 +1,15 @@
-<img width="100%" src="./assets/profile-header.svg" alt="Alecksey Shpuganich — Go backend developer" />
+<table>
+  <tr>
+    <td width="27%" align="center" valign="middle">
+      <img src="./avatar.gif" width="200" alt="Animated portrait of Alecksey Shpuganich" />
+      <br />
+      <sub><b>LIVE PORTRAIT</b> · TRANSMISSION ACTIVE</sub>
+    </td>
+    <td width="73%" valign="middle">
+      <img width="100%" src="./assets/profile-header.svg" alt="Alecksey Shpuganich — Go backend developer" />
+    </td>
+  </tr>
+</table>
 
 <div align="center">
   <sub><b>CONNECT</b></sub><br />

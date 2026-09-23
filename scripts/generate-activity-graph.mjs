@@ -15,13 +15,16 @@ const response = await fetch(`https://github.com/users/${encodeURIComponent(logi
     Accept: "text/html",
     "User-Agent": "venexene-activity-graph",
   },
+  signal: AbortSignal.timeout(15_000),
 });
 
 if (!response.ok) throw new Error(`GitHub contribution calendar returned HTTP ${response.status}.`);
 const calendarHtml = await response.text();
 const levelsByDate = new Map();
-for (const match of calendarHtml.matchAll(/data-date="(\d{4}-\d{2}-\d{2})"[^>]*data-level="(\d)"/g)) {
-  levelsByDate.set(match[1], Number(match[2]));
+for (const [element] of calendarHtml.matchAll(/<[^>]+>/g)) {
+  const date = element.match(/\bdata-date="(\d{4}-\d{2}-\d{2})"/);
+  const level = element.match(/\bdata-level="([0-4])"/);
+  if (date && level) levelsByDate.set(date[1], Number(level[1]));
 }
 if (levelsByDate.size === 0) throw new Error("GitHub did not return a public contribution calendar.");
 
@@ -32,8 +35,8 @@ const days = Array.from({ length: 31 }, (_, index) => {
   return { date, activityLevel: levelsByDate.get(date) ?? 0 };
 });
 
-const counts = days.map((day) => day.activityLevel);
-const maximum = Math.max(...counts, 1);
+const levels = days.map((day) => day.activityLevel);
+const maximum = 4;
 const width = 900;
 const height = 250;
 const left = 42;
@@ -43,10 +46,10 @@ const bottom = 48;
 const chartWidth = width - left - right;
 const chartHeight = height - top - bottom;
 const point = (count, index) => ({
-  x: left + (chartWidth * index) / (counts.length - 1),
+  x: left + (chartWidth * index) / (levels.length - 1),
   y: top + chartHeight - (count / maximum) * chartHeight,
 });
-const points = counts.map(point);
+const points = levels.map(point);
 const line = points.map(({ x, y }) => `${x.toFixed(2)},${y.toFixed(2)}`).join(" ");
 const area = `${left},${top + chartHeight} ${line} ${width - right},${top + chartHeight}`;
 const dateLabel = (index) => new Intl.DateTimeFormat("en", { month: "short", day: "numeric", timeZone: "UTC" })
@@ -64,7 +67,7 @@ const labels = [0, 7, 14, 21, 30].map((index) => {
   const { x } = points[index];
   return `<text x="${x}" y="${height - 20}" text-anchor="middle">${dateLabel(index)}</text>`;
 }).join("");
-const circles = points.map(({ x, y }, index) => `<circle cx="${x}" cy="${y}" r="3"><title>${days[index].date}: activity level ${counts[index]} of 4</title></circle>`).join("");
+const circles = points.map(({ x, y }, index) => `<circle cx="${x}" cy="${y}" r="3"><title>${days[index].date}: activity level ${levels[index]} of 4</title></circle>`).join("");
 
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="title desc">
   <title id="title">GitHub Activity Graph for ${login}</title>

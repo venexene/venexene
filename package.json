@@ -1,0 +1,12 @@
+{
+  "name": "venexene-profile",
+  "private": true,
+  "scripts": {
+    "generate:activity": "node scripts/generate-activity-graph.mjs",
+    "generate:projects": "node scripts/generate-project-cards.mjs",
+    "check": "node --check scripts/generate-activity-graph.mjs && node --check scripts/generate-project-cards.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
