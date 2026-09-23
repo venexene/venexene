@@ -59,9 +59,9 @@ const fetchJson = async (url) => {
       signal: AbortSignal.timeout(15_000),
     });
     if (!response.ok) throw new Error(`GitHub API returned HTTP ${response.status}`);
-    return await response.json();
+    return { ok: true, data: await response.json() };
   } catch {
-    return null;
+    return { ok: false, data: null };
   }
 };
 
@@ -84,10 +84,14 @@ const getProjectData = async (project) => {
   const repositoryUrl = `https://api.github.com/repos/venexene/${project.file}`;
   const runsUrl = `${repositoryUrl}/actions/runs?per_page=20`;
   const commitsUrl = `${repositoryUrl}/commits?per_page=1`;
-  const [repository, runs, commits] = await Promise.all([fetchJson(repositoryUrl), fetchJson(runsUrl), getCommitCount(commitsUrl)]);
+  const [repositoryResult, runsResult, commits] = await Promise.all([fetchJson(repositoryUrl), fetchJson(runsUrl), getCommitCount(commitsUrl)]);
+  const repository = repositoryResult.data;
+  const runs = runsResult.data;
   const signalRuns = runs?.workflow_runs?.filter((run) => ["push", "pull_request"].includes(run.event));
   const latestRun = signalRuns?.[0] ?? runs?.workflow_runs?.[0];
-  const status = !latestRun
+  const status = !runsResult.ok
+    ? { label: "CI UNAVAILABLE", color: "#facc15" }
+    : !latestRun
     ? { label: "NO CI", color: "#6b7280" }
     : latestRun.status !== "completed"
       ? { label: "CI RUNNING", color: "#facc15" }
@@ -100,8 +104,8 @@ const getProjectData = async (project) => {
 const makePills = (stack) => {
   let x = 28;
   return stack.map((item) => {
-    const width = item.length * 7.2 + 25;
-    const pill = `<rect x="${x}" y="180" width="${width}" height="27" rx="6" fill="#0c1620" stroke="#24515b"/><text x="${x + width / 2}" y="198" text-anchor="middle" fill="#e5f8fb" font-family="Arial, sans-serif" font-size="11" font-weight="700">${escapeXml(item)}</text>`;
+    const width = item.length * 9.2 + 30;
+    const pill = `<rect x="${x}" y="178" width="${width}" height="30" rx="6" fill="#0c1620" stroke="#24515b"/><text x="${x + width / 2}" y="198" text-anchor="middle" fill="#e5f8fb" font-family="Arial, sans-serif" font-size="13" font-weight="700">${escapeXml(item)}</text>`;
     x += width + 7;
     return pill;
   }).join("");

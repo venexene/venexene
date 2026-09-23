@@ -1,14 +1,15 @@
 <img width="100%" src="./assets/profile-header.svg" alt="Alecksey Shpuganich — Go backend developer" />
-<div align="center">
-  <a href="https://github.com/venexene"><img src="./assets/connect/github.svg" alt="GitHub: venexene" /></a>
-  <a href="https://t.me/Flayven"><img src="./assets/connect/telegram.svg" alt="Telegram: @Flayven" /></a>
-  <a href="mailto:flayven.marlon@gmail.com"><img src="./assets/connect/email.svg" alt="Email: flayven.marlon@gmail.com" /></a>
-  <a href="https://leetcode.com/venexene"><img src="./assets/connect/leetcode.svg" alt="LeetCode: venexene" /></a>
-  <a href="./resume.pdf"><img src="./assets/connect/resume.svg" alt="Open resume PDF" /></a>
-</div>
+<table>
+  <tr>
+    <td width="50%"><a href="https://t.me/Flayven"><img width="100%" src="./assets/connect/telegram.svg" alt="Telegram: @Flayven" /></a></td>
+    <td width="50%"><a href="mailto:flayven.marlon@gmail.com"><img width="100%" src="./assets/connect/email.svg" alt="Email: flayven.marlon@gmail.com" /></a></td>
+  </tr>
+  <tr>
+    <td width="50%"><a href="https://leetcode.com/venexene"><img width="100%" src="./assets/connect/leetcode.svg" alt="LeetCode: venexene" /></a></td>
+    <td width="50%"><a href="./resume.pdf"><img width="100%" src="./assets/connect/resume.svg" alt="Open resume PDF" /></a></td>
+  </tr>
+</table>
 <img width="100%" src="./assets/stack.svg" alt="Technical stack: Go, Python, PostgreSQL, Kafka, RabbitMQ, Docker, SQLite and Prometheus" />
-
----
 
 <img width="100%" src="./activity-graph.svg" alt="GitHub activity graph" />
 <table>
