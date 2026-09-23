@@ -2,7 +2,7 @@ name: Update project cards
 
 on:
   schedule:
-    - cron: "31 2 * * *"
+    - cron: "0 2 * * *"
   workflow_dispatch:
   push:
     branches: ["main", "master"]
@@ -14,7 +14,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: project-cards-${{ github.ref }}
+  group: profile-assets-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
@@ -32,7 +32,7 @@ jobs:
       - name: Commit updated cards
         uses: stefanzweifel/git-auto-commit-action@28e16e81777b558cc906c8750092100bbb34c5e3 # v7.0.0
         with:
-          commit_message: "chore: update project cards"
+          commit_message: "chore: update profile assets"
           file_pattern: |
             assets/projects/*.svg
             assets/projects/metrics.json

@@ -2,7 +2,7 @@ name: Metrics
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 2 * * *"
   workflow_dispatch:
   push:
     branches: ["main", "master"]
@@ -10,7 +10,7 @@ on:
       - ".github/workflows/leetcode.yml"
 
 concurrency:
-  group: leetcode-${{ github.ref }}
+  group: profile-assets-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
@@ -85,5 +85,5 @@ jobs:
       - name: Commit corrected card height
         uses: stefanzweifel/git-auto-commit-action@28e16e81777b558cc906c8750092100bbb34c5e3 # v7.0.0
         with:
-          commit_message: "chore: fix leetcode card height"
+          commit_message: "chore: update profile assets"
           file_pattern: metrics.plugin.leetcode.svg
