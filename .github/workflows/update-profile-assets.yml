@@ -1,4 +1,4 @@
-name: Metrics
+name: Update profile assets
 
 on:
   schedule:
@@ -7,14 +7,19 @@ on:
   push:
     branches: ["main", "master"]
     paths:
-      - ".github/workflows/leetcode.yml"
+      - ".github/workflows/update-profile-assets.yml"
+      - "scripts/generate-activity-graph.mjs"
+      - "scripts/generate-project-cards.mjs"
+      - "scripts/generate-now-building.mjs"
+      - "work.gif"
+      - "package.json"
 
 concurrency:
   group: profile-assets-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
-  github-metrics:
+  update:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -22,6 +27,17 @@ jobs:
       - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
         with:
           fetch-depth: 0
+      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5.0.0
+        with:
+          node-version: 22
+      - name: Generate local profile assets
+        env:
+          GITHUB_USERNAME: venexene
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          npm run generate:activity
+          npm run generate:projects
+          npm run generate:now
       - uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # v3.34
         with:
           filename: metrics.plugin.leetcode.svg
@@ -42,6 +58,13 @@ jobs:
               color: #d1d5db;
             }
             .items-wrapper svg { color: #00e5ff; }
+            .items-wrapper .leetcode-title {
+              margin: 0 0 10px;
+              color: #fff;
+              font-size: 18px;
+              font-weight: 700;
+              letter-spacing: 1.1px;
+            }
             .items-wrapper > section {
               display: grid;
               grid-template-columns: 3fr 2fr;
@@ -76,14 +99,23 @@ jobs:
               g.setAttribute("width", "110");
               g.setAttribute("height", "110");
             });
-            const leetcodeTitle = document.querySelector("h2.field");
-            if (leetcodeTitle) leetcodeTitle.remove();
-      - name: Fetch generated card
-        run: git pull --rebase
+            const root = document.querySelector(".items-wrapper");
+            if (root) {
+              const title = document.createElement("h2");
+              title.className = "field leetcode-title";
+              title.textContent = "LEETCODE";
+              root.prepend(title);
+            }
       - name: Reserve space for the wide layout
-        run: sed -i -E '1 s/height="[0-9]+"/height="330"/' metrics.plugin.leetcode.svg
-      - name: Commit corrected card height
+        run: sed -i -E '1 s/height="[0-9]+"/height="360"/' metrics.plugin.leetcode.svg
+      - name: Commit updated profile assets
         uses: stefanzweifel/git-auto-commit-action@28e16e81777b558cc906c8750092100bbb34c5e3 # v7.0.0
         with:
           commit_message: "chore: update profile assets"
-          file_pattern: metrics.plugin.leetcode.svg
+          file_pattern: |
+            activity-graph.svg
+            metrics.plugin.leetcode.svg
+            assets/projects/*.svg
+            assets/projects/metrics.json
+            assets/now-building.svg
+            assets/now-building.json

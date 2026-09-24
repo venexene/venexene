@@ -24,7 +24,7 @@
     </td>
   </tr>
 </table>
-<img width="100%" src="./metrics.plugin.leetcode.svg?v=wide-330" alt="LeetCode Stats" />
+<img width="100%" src="./metrics.plugin.leetcode.svg?v=wide-360" alt="LeetCode Stats" />
 <table>
   <tr>
     <td width="50%" valign="top">
