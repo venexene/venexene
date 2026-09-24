@@ -61,7 +61,8 @@ jobs:
             }
             .items-wrapper svg { color: #00e5ff; }
             .items-wrapper .leetcode-title {
-              margin: 0 0 10px;
+              grid-column: 1 / -1;
+              margin: 0;
               color: #fff;
               font-size: 18px;
               font-weight: 700;
@@ -70,13 +71,13 @@ jobs:
             .items-wrapper > section {
               display: grid;
               grid-template-columns: 3fr 2fr;
-              gap: 12px 28px;
+              gap: 6px 28px;
             }
-            .items-wrapper > section > section:first-child {
+            .items-wrapper > section > section:nth-of-type(1) {
               grid-column: 1 / -1;
             }
             .leetcode.scores .categories {
-              width: 620px;
+              width: 100%;
               margin: 0 auto;
             }
             .leetcode.subsection {
@@ -101,15 +102,11 @@ jobs:
               g.setAttribute("width", "110");
               g.setAttribute("height", "110");
             });
-            const root = document.querySelector(".items-wrapper");
-            if (root) {
-              const title = document.createElement("h2");
-              title.className = "field leetcode-title";
+            const title = document.querySelector(".items-wrapper > section > h2.field");
+            if (title) {
+              title.classList.add("leetcode-title");
               title.textContent = "LEETCODE";
-              root.prepend(title);
             }
-      - name: Reserve space for the wide layout
-        run: sed -i -E '1 s/height="[0-9]+"/height="360"/' metrics.plugin.leetcode.svg
       - name: Commit updated profile assets
         uses: stefanzweifel/git-auto-commit-action@28e16e81777b558cc906c8750092100bbb34c5e3 # v7.0.0
         with:

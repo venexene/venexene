@@ -13,7 +13,8 @@
 }
 .items-wrapper svg { color: #00e5ff; }
 .items-wrapper .leetcode-title {
- margin: 0 0 10px;
+ grid-column: 1 / -1;
+ margin: 0;
  color: #fff;
  font-size: 18px;
  font-weight: 700;
@@ -22,13 +23,13 @@
 .items-wrapper &gt; section {
  display: grid;
  grid-template-columns: 3fr 2fr;
- gap: 12px 28px;
+ gap: 6px 28px;
 }
-.items-wrapper &gt; section &gt; section:first-child {
+.items-wrapper &gt; section &gt; section:nth-of-type(1) {
  grid-column: 1 / -1;
 }
 .leetcode.scores .categories {
- width: 620px;
+ width: 100%;
  margin: 0 auto;
 }
 .leetcode.subsection {
@@ -49,14 +50,8 @@
  height: 110px !important;
 }</style>
     <foreignObject x="0" y="0" width="100%" height="100%">
-        <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" class="items-wrapper"><h2 class="field leetcode-title">LEETCODE</h2>
-            <section>
-                <h2 class="field">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                        <path fill-rule="evenodd" d="M2.5 3.5v3h3v-3h-3zM2 2a1 1 0 00-1 1v4a1 1 0 001 1h4a1 1 0 001-1V3a1 1 0 00-1-1H2zm4.655 8.595a.75.75 0 010 1.06L4.03 14.28a.75.75 0 01-1.06 0l-1.5-1.5a.75.75 0 111.06-1.06l.97.97 2.095-2.095a.75.75 0 011.06 0zM9.75 2.5a.75.75 0 000 1.5h5.5a.75.75 0 000-1.5h-5.5zm0 5a.75.75 0 000 1.5h5.5a.75.75 0 000-1.5h-5.5zm0 5a.75.75 0 000 1.5h5.5a.75.75 0 000-1.5h-5.5z"/>
-                    </svg>
-                    LeetCode statistics for venexene
-                </h2>
+        <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink" class="items-wrapper"><section>
+                <h2 class="field leetcode-title">LEETCODE</h2>
                 <section>
                     <div class="row fill-width leetcode scores">
                         <section class="categories">
