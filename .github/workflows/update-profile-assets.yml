@@ -107,6 +107,8 @@ jobs:
               title.classList.add("leetcode-title");
               title.textContent = "LEETCODE";
             }
+      - name: Set compact LeetCode canvas height
+        run: sed -i -E '1 s/height="[0-9]+"/height="360"/' metrics.plugin.leetcode.svg
       - name: Commit updated profile assets
         uses: stefanzweifel/git-auto-commit-action@28e16e81777b558cc906c8750092100bbb34c5e3 # v7.0.0
         with:
