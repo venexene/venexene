@@ -16,12 +16,8 @@
 <img width="100%" src="./activity-graph.svg" alt="GitHub activity graph" />
 <table>
   <tr>
-    <td>
-      <img height="195" src="https://github-readme-stats.shion.dev/api?username=venexene&show_icons=true&bg_color=000000&title_color=ffffff&text_color=ffffff&icon_color=00e5ff&ring_color=00e5ff&hide_border=true" alt="GitHub stats" />
-    </td>
-    <td>
-      <img height="195" src="https://github-readme-stats.shion.dev/api/top-langs/?username=venexene&exclude_repo=imdb-classification,GANImgGen,voice-commands-recognition&layout=compact&langs_count=7&bg_color=000000&title_color=ffffff&text_color=ffffff&hide_border=true" alt="Top Langs" />
-    </td>
+    <td width="50%"><img width="100%" src="./assets/github-overview.svg" alt="GitHub overview" /></td>
+    <td width="50%"><img width="100%" src="./assets/top-languages.svg" alt="Top programming languages" /></td>
   </tr>
 </table>
 <img width="100%" src="./metrics.plugin.leetcode.svg?v=wide-360" alt="LeetCode Stats" />
