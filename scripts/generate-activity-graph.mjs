@@ -74,8 +74,8 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${
   <desc id="desc">Daily public GitHub contribution intensity during the last 31 days, shown on GitHub's five-level scale rather than as contribution counts.</desc>
   <defs><linearGradient id="fill" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#00e5ff" stop-opacity=".35"/><stop offset="1" stop-color="#00e5ff" stop-opacity="0"/></linearGradient></defs>
   <rect width="100%" height="100%" rx="8" fill="#000" stroke="#fff"/>
-  <text x="${left}" y="31" fill="#fff" font-family="Arial, sans-serif" font-size="18" font-weight="600">GitHub Activity Graph</text>
-  <text x="${width - right}" y="31" fill="#a6a6a6" font-family="Arial, sans-serif" font-size="12" text-anchor="end">Last 31 days</text>
+  <rect x="0" y="0" width="6" height="${height}" rx="3" fill="#00e5ff"/>
+  <text x="26" y="37" fill="#fff" font-family="Arial, sans-serif" font-size="19" font-weight="700">GITHUB ACTIVITY</text>
   <g fill="none" stroke="#3b3b3b" stroke-width="1" stroke-dasharray="3 4">${gridLines}</g>
   <g fill="#a6a6a6" font-family="Arial, sans-serif" font-size="11">${gridValues}</g>
   <polygon points="${area}" fill="url(#fill)"/>
