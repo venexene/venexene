@@ -2,8 +2,8 @@
   "file": "concurrency-practice",
   "name": "concurrency-practice",
   "type": "CONCURRENCY TASKS AND NOTES",
-  "commit": "feat: add non-blocking-send",
-  "updatedAt": "2026-09-23T12:21:30Z",
+  "commit": "docs: update README",
+  "updatedAt": "2026-09-24T19:10:35Z",
   "status": {
     "label": "NO CI",
     "color": "#6b7280"

@@ -55,7 +55,7 @@ if (latest) {
     name: knownProject?.name ?? latest.name,
     type: knownProject?.type ?? latest.description?.toUpperCase().slice(0, 34) ?? "GITHUB REPOSITORY",
     commit: commit?.[0]?.commit?.message?.split("\n")[0] ?? "Latest repository update",
-    updatedAt: commit?.[0]?.commit?.author?.date ?? latest.pushed_at,
+    updatedAt: latest.pushed_at,
     status: runs ? statusFromRuns(runs) : metrics[latest.name]?.status ?? cached.status ?? { label: "CI UNAVAILABLE", color: "#facc15" },
   };
 }

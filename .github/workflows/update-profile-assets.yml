@@ -47,6 +47,7 @@ jobs:
           base: ""
           config_display: large
           config_padding: 0, 0
+          output_action: none
           plugin_leetcode: yes
           plugin_leetcode_user: venexene
           plugin_leetcode_sections: solved, skills, recent
