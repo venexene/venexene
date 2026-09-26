@@ -16,9 +16,9 @@ const escapeXml = (text) => text.replace(/[&<>"']/g, (character) => ({ "&": "&am
 const readJson = async (path, fallback) => {
   try { return JSON.parse(await readFile(path, "utf8")); } catch { return fallback; }
 };
-const fetchJson = async (url) => {
+const fetchJson = async (url, { authenticated = true } = {}) => {
   try {
-    const response = await fetch(url, { headers: { Accept: "application/vnd.github+json", ...headers }, signal: AbortSignal.timeout(15_000) });
+    const response = await fetch(url, { headers: { Accept: "application/vnd.github+json", ...(authenticated ? headers : {}) }, signal: AbortSignal.timeout(15_000) });
     if (!response.ok) throw new Error(`GitHub API returned HTTP ${response.status}`);
     return await response.json();
   } catch { return null; }
@@ -40,7 +40,7 @@ const statusFromRuns = (runs) => {
     : { label: "CI FAILED", color: "#fb7185" };
 };
 
-const repositories = await fetchJson("https://api.github.com/users/venexene/repos?per_page=100&sort=updated");
+const repositories = await fetchJson("https://api.github.com/users/venexene/repos?per_page=100&sort=updated", { authenticated: false });
 const latest = repositories?.filter((repository) => repository.name !== "venexene" && repository.pushed_at)
   .sort((left, right) => new Date(right.pushed_at) - new Date(left.pushed_at))[0];
 let nowBuilding = cached;
