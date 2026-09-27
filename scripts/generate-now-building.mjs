@@ -40,9 +40,10 @@ const statusFromRuns = (runs) => {
     : { label: "CI FAILED", color: "#fb7185" };
 };
 
-const repositories = await fetchJson("https://api.github.com/users/venexene/repos?per_page=100&sort=updated", { authenticated: false });
-const latest = repositories?.filter((repository) => repository.name !== "venexene" && repository.pushed_at)
-  .sort((left, right) => new Date(right.pushed_at) - new Date(left.pushed_at))[0];
+const repositoryUrl = `https://api.github.com/users/venexene/repos?per_page=100&sort=pushed&direction=desc&cache_bust=${Date.now()}`;
+const repositories = await fetchJson(repositoryUrl) ?? await fetchJson(repositoryUrl, { authenticated: false });
+if (!repositories) throw new Error("Unable to fetch the public repository list for NOW BUILDING.");
+const latest = repositories.find((repository) => repository.name !== "venexene" && repository.pushed_at);
 let nowBuilding = cached;
 if (latest) {
   const [commit, runs] = await Promise.all([
