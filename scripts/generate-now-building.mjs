@@ -40,10 +40,15 @@ const statusFromRuns = (runs) => {
     : { label: "CI FAILED", color: "#fb7185" };
 };
 
-const repositoryUrl = `https://api.github.com/users/venexene/repos?per_page=100&sort=pushed&direction=desc&cache_bust=${Date.now()}`;
-const repositories = await fetchJson(repositoryUrl) ?? await fetchJson(repositoryUrl, { authenticated: false });
-if (!repositories) throw new Error("Unable to fetch the public repository list for NOW BUILDING.");
-const latest = repositories.find((repository) => repository.name !== "venexene" && repository.pushed_at);
+const eventsUrl = `https://api.github.com/users/venexene/events/public?per_page=100&cache_bust=${Date.now()}`;
+const events = await fetchJson(eventsUrl, { authenticated: false });
+const latestEvent = events?.filter((event) => event.type === "PushEvent" && event.repo?.name !== "venexene/venexene")
+  .sort((left, right) => new Date(right.created_at) - new Date(left.created_at))[0];
+if (!latestEvent) throw new Error("Unable to find a recent public push for NOW BUILDING.");
+const latest = {
+  name: latestEvent.repo.name.split("/").at(-1),
+  pushed_at: latestEvent.created_at,
+};
 let nowBuilding = cached;
 if (latest) {
   const [commit, runs] = await Promise.all([

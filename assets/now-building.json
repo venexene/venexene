@@ -1,9 +1,9 @@
 {
-  "file": "concurrency-practice",
-  "name": "concurrency-practice",
-  "type": "CONCURRENCY TASKS AND NOTES",
-  "commit": "feat: add condition-variable-queue",
-  "updatedAt": "2026-09-26T12:50:34Z",
+  "file": "backend-practice",
+  "name": "backend-practice",
+  "type": "GITHUB REPOSITORY",
+  "commit": "feat: add README and gitignore",
+  "updatedAt": "2026-09-28T12:43:53Z",
   "status": {
     "label": "NO CI",
     "color": "#6b7280"

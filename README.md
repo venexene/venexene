@@ -13,7 +13,7 @@
 
 <a href="https://github.com/venexene"><img width="100%" src="./assets/now-building.svg" alt="Now building — dynamically updated featured project" /></a>
 
-<img width="100%" src="./activity-graph.svg" alt="GitHub activity graph" />
+<img width="100%" src="./activity-graph.svg?v=activity-20260928" alt="GitHub activity graph" />
 <table>
   <tr>
     <td width="50%"><img width="100%" src="./assets/github-overview.svg" alt="GitHub overview" /></td>
