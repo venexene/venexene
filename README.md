@@ -21,6 +21,7 @@
   </tr>
 </table>
 <img width="100%" src="./metrics.plugin.leetcode.svg?v=layout-350" alt="LeetCode Stats" />
+<img width="100%" src="./assets/projects/header.svg" alt="Backend projects — live repository metrics" />
 <table>
   <tr>
     <td width="50%" valign="top">
