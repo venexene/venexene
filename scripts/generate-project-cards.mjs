@@ -76,7 +76,39 @@ const practiceProjects = [
   },
 ];
 
-const projects = [...goProjects, ...practiceProjects];
+const mlProjects = [
+  {
+    file: "document-element-detector",
+    owner: "Rcinderblock",
+    name: "Doc Detector",
+    type: "DOCUMENT LAYOUT ANALYSIS",
+    description: ["Detects structural elements in document", "images for layout-aware processing."],
+    stack: ["Python", "Computer Vision", "Docker"],
+  },
+  {
+    file: "voice-commands-recognition",
+    name: "Voice Commands",
+    type: "NEURAL SPEECH COMMAND CLASSIFIER",
+    description: ["Neural-network experiments for recognizing", "spoken commands from audio signals."],
+    stack: ["Python", "TensorFlow", "Jupyter"],
+  },
+  {
+    file: "GANImgGen",
+    name: "GAN Image Gen",
+    type: "GENERATIVE IMAGE SYNTHESIS",
+    description: ["Experiments with generative adversarial", "networks for creating new images."],
+    stack: ["Python", "PyTorch", "GAN"],
+  },
+  {
+    file: "imdb-classification",
+    name: "IMDb Classifier",
+    type: "SENTIMENT ANALYSIS",
+    description: ["A web project that classifies IMDb reviews", "by sentiment using machine learning."],
+    stack: ["Python", "NLP", "Jupyter"],
+  },
+];
+
+const projects = [...goProjects, ...practiceProjects, ...mlProjects];
 
 const escapeXml = (text) => text.replace(/[&<>"']/g, (character) => ({
   "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&apos;",
@@ -121,7 +153,7 @@ const getCommitCount = async (url) => {
 };
 
 const getProjectData = async (project) => {
-  const repositoryUrl = `https://api.github.com/repos/venexene/${project.file}`;
+  const repositoryUrl = `https://api.github.com/repos/${project.owner ?? "venexene"}/${project.file}`;
   const runsUrl = `${repositoryUrl}/actions/runs?per_page=20`;
   const commitsUrl = `${repositoryUrl}/commits?per_page=1`;
   const [repositoryResult, runsResult, commits] = await Promise.all([fetchJson(repositoryUrl), fetchJson(runsUrl), getCommitCount(commitsUrl)]);
@@ -186,3 +218,6 @@ await writeFile("assets/projects/header.svg", projectHeader);
 
 const practiceHeader = `<svg xmlns="http://www.w3.org/2000/svg" width="900" height="72" viewBox="0 0 900 72" role="img" aria-labelledby="title desc"><title id="title">Practice</title><desc id="desc">Practice repositories for algorithms, SQL, concurrency and backend development.</desc><rect width="900" height="72" rx="10" fill="#000" stroke="#fff"/><text x="450" y="32" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="19" font-weight="700" letter-spacing=".5">PRACTICE</text><text x="450" y="53" text-anchor="middle" fill="#00e5ff" font-family="Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="1.4">ALGORITHMS · SQL · CONCURRENCY · BACKEND</text></svg>\n`;
 await writeFile("assets/projects/practice-header.svg", practiceHeader);
+
+const mlHeader = `<svg xmlns="http://www.w3.org/2000/svg" width="900" height="72" viewBox="0 0 900 72" role="img" aria-labelledby="title desc"><title id="title">Machine learning projects</title><desc id="desc">Machine learning projects in document analysis, speech recognition, image generation and sentiment analysis.</desc><rect width="900" height="72" rx="10" fill="#000" stroke="#fff"/><text x="450" y="32" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="19" font-weight="700" letter-spacing=".5">ML PROJECTS</text><text x="450" y="53" text-anchor="middle" fill="#00e5ff" font-family="Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="1.4">COMPUTER VISION · SPEECH · GENERATIVE AI · NLP</text></svg>\n`;
+await writeFile("assets/projects/ml-header.svg", mlHeader);

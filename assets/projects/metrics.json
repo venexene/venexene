@@ -78,5 +78,37 @@
       "label": "NO CI",
       "color": "#6b7280"
     }
+  },
+  "document-element-detector": {
+    "stars": 0,
+    "commits": 73,
+    "status": {
+      "label": "NO CI",
+      "color": "#6b7280"
+    }
+  },
+  "voice-commands-recognition": {
+    "stars": 0,
+    "commits": 11,
+    "status": {
+      "label": "NO CI",
+      "color": "#6b7280"
+    }
+  },
+  "GANImgGen": {
+    "stars": 0,
+    "commits": 4,
+    "status": {
+      "label": "NO CI",
+      "color": "#6b7280"
+    }
+  },
+  "imdb-classification": {
+    "stars": 0,
+    "commits": 20,
+    "status": {
+      "label": "NO CI",
+      "color": "#6b7280"
+    }
   }
 }

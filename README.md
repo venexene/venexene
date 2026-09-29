@@ -67,3 +67,22 @@
     </td>
   </tr>
 </table>
+<img width="100%" src="./assets/projects/ml-header.svg" alt="Machine learning projects — computer vision, speech, generative AI and NLP" />
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/Rcinderblock/document-element-detector"><img src="./assets/projects/document-element-detector.svg" alt="Document element detector — document layout analysis" /></a>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/venexene/voice-commands-recognition"><img src="./assets/projects/voice-commands-recognition.svg" alt="Voice commands recognition — neural speech command classifier" /></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/venexene/GANImgGen"><img src="./assets/projects/GANImgGen.svg" alt="GAN Image Gen — generative image synthesis" /></a>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/venexene/imdb-classification"><img src="./assets/projects/imdb-classification.svg" alt="IMDb Classifier — sentiment analysis" /></a>
+    </td>
+  </tr>
+</table>
