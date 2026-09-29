@@ -48,3 +48,22 @@
     </td>
   </tr>
 </table>
+<img width="100%" src="./assets/projects/practice-header.svg" alt="Practice repositories — algorithms, SQL, concurrency and backend development" />
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/venexene/algorithms-practice"><img src="./assets/projects/algorithms-practice.svg" alt="Algorithms practice — algorithms and data structures" /></a>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/venexene/sql-practice"><img src="./assets/projects/sql-practice.svg" alt="SQL practice — queries and database notes" /></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/venexene/concurrency-practice"><img src="./assets/projects/concurrency-practice.svg" alt="Concurrency practice — Go concurrency patterns" /></a>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/venexene/backend-practice"><img src="./assets/projects/backend-practice.svg" alt="Backend practice — backend engineering notes" /></a>
+    </td>
+  </tr>
+</table>

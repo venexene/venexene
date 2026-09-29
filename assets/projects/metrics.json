@@ -46,5 +46,37 @@
       "label": "CI PASSED",
       "color": "#00e5ff"
     }
+  },
+  "algorithms-practice": {
+    "stars": 0,
+    "commits": 155,
+    "status": {
+      "label": "NO CI",
+      "color": "#6b7280"
+    }
+  },
+  "sql-practice": {
+    "stars": 0,
+    "commits": 62,
+    "status": {
+      "label": "NO CI",
+      "color": "#6b7280"
+    }
+  },
+  "concurrency-practice": {
+    "stars": 0,
+    "commits": 38,
+    "status": {
+      "label": "NO CI",
+      "color": "#6b7280"
+    }
+  },
+  "backend-practice": {
+    "stars": 0,
+    "commits": 2,
+    "status": {
+      "label": "NO CI",
+      "color": "#6b7280"
+    }
   }
 }

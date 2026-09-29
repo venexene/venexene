@@ -1,6 +1,6 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 
-const projects = [
+const goProjects = [
   {
     file: "gorder",
     name: "Gorder",
@@ -44,6 +44,39 @@ const projects = [
     stack: ["Go", "RabbitMQ", "PostgreSQL"],
   },
 ];
+
+const practiceProjects = [
+  {
+    file: "algorithms-practice",
+    name: "Algorithms",
+    type: "ALGORITHMS & DATA STRUCTURES",
+    description: ["Practice tasks, patterns and notes for", "core algorithmic techniques in Go."],
+    stack: ["Go", "Algorithms"],
+  },
+  {
+    file: "sql-practice",
+    name: "SQL Practice",
+    type: "SQL QUERIES & DATABASE NOTES",
+    description: ["A growing collection of SQL tasks,", "queries and database design notes."],
+    stack: ["SQL", "PostgreSQL"],
+  },
+  {
+    file: "concurrency-practice",
+    name: "Concurrency",
+    type: "GO CONCURRENCY PATTERNS",
+    description: ["Hands-on exercises with goroutines,", "channels, synchronization and races."],
+    stack: ["Go", "Concurrency"],
+  },
+  {
+    file: "backend-practice",
+    name: "Backend",
+    type: "BACKEND ENGINEERING NOTES",
+    description: ["Focused tasks and notes for building", "reliable backend services and APIs."],
+    stack: ["Go", "HTTP", "PostgreSQL"],
+  },
+];
+
+const projects = [...goProjects, ...practiceProjects];
 
 const escapeXml = (text) => text.replace(/[&<>"']/g, (character) => ({
   "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&apos;",
@@ -150,3 +183,6 @@ await Promise.all(projects.map(async (project) => {
 
 const projectHeader = `<svg xmlns="http://www.w3.org/2000/svg" width="900" height="72" viewBox="0 0 900 72" role="img" aria-labelledby="title desc"><title id="title">Go projects</title><desc id="desc">Selected backend services, tools and experiments built with Go.</desc><rect width="900" height="72" rx="10" fill="#000" stroke="#fff"/><text x="450" y="32" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="19" font-weight="700" letter-spacing=".5">GO PROJECTS</text><text x="450" y="53" text-anchor="middle" fill="#00e5ff" font-family="Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="1.4">BACKEND SERVICES · TOOLS · EXPERIMENTS</text></svg>\n`;
 await writeFile("assets/projects/header.svg", projectHeader);
+
+const practiceHeader = `<svg xmlns="http://www.w3.org/2000/svg" width="900" height="72" viewBox="0 0 900 72" role="img" aria-labelledby="title desc"><title id="title">Practice</title><desc id="desc">Practice repositories for algorithms, SQL, concurrency and backend development.</desc><rect width="900" height="72" rx="10" fill="#000" stroke="#fff"/><text x="450" y="32" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="19" font-weight="700" letter-spacing=".5">PRACTICE</text><text x="450" y="53" text-anchor="middle" fill="#00e5ff" font-family="Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="1.4">ALGORITHMS · SQL · CONCURRENCY · BACKEND</text></svg>\n`;
+await writeFile("assets/projects/practice-header.svg", practiceHeader);
