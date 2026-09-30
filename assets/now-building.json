@@ -1,9 +1,9 @@
 {
-  "file": "backend-practice",
-  "name": "backend-practice",
-  "type": "GITHUB REPOSITORY",
-  "commit": "feat: add README and gitignore",
-  "updatedAt": "2026-09-28T12:43:53Z",
+  "file": "concurrency-practice",
+  "name": "concurrency-practice",
+  "type": "CONCURRENCY TASKS AND NOTES",
+  "commit": "feat: add parallel-map-first-error",
+  "updatedAt": "2026-09-29T18:54:17Z",
   "status": {
     "label": "NO CI",
     "color": "#6b7280"
