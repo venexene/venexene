@@ -49,7 +49,7 @@
   },
   "algorithms-practice": {
     "stars": 0,
-    "commits": 155,
+    "commits": 156,
     "status": {
       "label": "NO CI",
       "color": "#6b7280"
@@ -65,7 +65,7 @@
   },
   "concurrency-practice": {
     "stars": 0,
-    "commits": 38,
+    "commits": 43,
     "status": {
       "label": "NO CI",
       "color": "#6b7280"
