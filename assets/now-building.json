@@ -2,8 +2,8 @@
   "file": "concurrency-practice",
   "name": "concurrency-practice",
   "type": "CONCURRENCY TASKS AND NOTES",
-  "commit": "feat: add first-successful-response",
-  "updatedAt": "2026-09-30T11:48:08Z",
+  "commit": "docs: update README",
+  "updatedAt": "2026-10-02T09:50:51Z",
   "status": {
     "label": "NO CI",
     "color": "#6b7280"
