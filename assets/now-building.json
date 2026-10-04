@@ -2,8 +2,8 @@
   "file": "concurrency-practice",
   "name": "concurrency-practice",
   "type": "CONCURRENCY TASKS AND NOTES",
-  "commit": "docs: update README",
-  "updatedAt": "2026-10-02T09:50:51Z",
+  "commit": "feat: add isolated-request-scopes",
+  "updatedAt": "2026-10-03T16:07:48Z",
   "status": {
     "label": "NO CI",
     "color": "#6b7280"
