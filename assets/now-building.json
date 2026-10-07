@@ -1,9 +1,9 @@
 {
-  "file": "concurrency-practice",
-  "name": "concurrency-practice",
-  "type": "CONCURRENCY TASKS AND NOTES",
+  "file": "algorithms-practice",
+  "name": "algorithms-practice",
+  "type": "ALGORITHMS TASKS AND NOTES",
   "commit": "docs: update README",
-  "updatedAt": "2026-10-05T20:45:07Z",
+  "updatedAt": "2026-10-06T20:02:45Z",
   "status": {
     "label": "NO CI",
     "color": "#6b7280"
